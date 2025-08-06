@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
+using StampSystem.Models;
 
 namespace StampSystem.Controllers
 {

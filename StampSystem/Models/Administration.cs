@@ -1,15 +1,18 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class Administration
+namespace StampSystem.Models
 {
-    public int Id { get; set; }
+    public class Administration
+    {
+        public int Id { get; set; }
 
-    [Required]
-    public string Name { get; set; }
+        [Required]
+        public string Name { get; set; } = string.Empty;
 
-    
-    public string ManagerName { get; set; }
+        [Required]
+        public string ManagerName { get; set; } = string.Empty;
 
-    
-    public ICollection<Section> Sections { get; set; }
+        public ICollection<Section>? Sections { get; set; }
+    }
+
 }

@@ -1,38 +1,39 @@
-﻿@model Administration
+﻿@model StampSystem.Models.Section
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "إنشاء قسم جديد";
 }
 
-<h1>Create</h1>
+<h2>@ViewData["Title"]</h2>
 
-<h4>Administration</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ManagerName" class="control-label"></label>
-                <input asp-for="ManagerName" class="form-control" />
-                <span asp-validation-for="ManagerName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">اسم القسم</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div class="form-group">
+        <label asp-for="HeadName" class="control-label">اسم رئيس القسم</label>
+        <input asp-for="HeadName" class="form-control" />
+        <span asp-validation-for="HeadName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AdministrationId" class="control-label">الإدارة</label>
+        <select asp-for="AdministrationId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.AdministrationId, "Value", "Text"))">
+            <option value="">-- اختر الإدارة --</option>
+        </select>
+        <span asp-validation-for="AdministrationId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">حفظ</button>
+    <a asp-action="Index" class="btn btn-secondary">عودة</a>
+</form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

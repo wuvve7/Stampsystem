@@ -1,19 +1,22 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-public class Section
+namespace StampSystem.Models
 {
-    public int Id { get; set; }
+    public class Section
+    {
+        public int Id { get; set; }
 
-    [Required]
-    public string Name { get; set; }
+        [Required]
+        public string Name { get; set; } = string.Empty;
 
-    
-    public string HeadName { get; set; }
 
-    // الربط بالإدارة
-    public int AdministrationId { get; set; }
-    public Administration Administration { get; set; }
+        public string HeadName { get; set; } = string.Empty;
 
-    // علاقات: تحتوي على وحدات
-    public ICollection<Unit> Units { get; set; }
+        // الربط بالإدارة
+        public int AdministrationId { get; set; }
+        public Administration? Administration { get; set; }
+
+        // علاقات: تحتوي على وحدات
+        public ICollection<Unit> Units { get; set; } = new List<Unit>();
+    }
 }

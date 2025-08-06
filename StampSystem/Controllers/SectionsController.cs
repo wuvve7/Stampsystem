@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
+using StampSystem.Models;
 
 namespace StampSystem.Controllers
 {
@@ -47,40 +48,25 @@ namespace StampSystem.Controllers
         // GET: Sections/Create
         public IActionResult Create()
         {
-            var viewModel = new SectionViewModel
-            {
-                Section = new Section(),
-                Administrations = _context.Administrations
-                    .Select(a => new SelectListItem
-                    {
-                        Value = a.Id.ToString(),
-                        Text = a.Name
-                    }).ToList()
-            };
-
-            return View(viewModel);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name");
+            return View();
         }
 
         // POST: Sections/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(SectionViewModel viewModel)
+        public async Task<IActionResult> Create([Bind("Id,Name,HeadName,AdministrationId")] Section section)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(viewModel.Section);
+                _context.Add(section);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
-            viewModel.Administrations = _context.Administrations
-                .Select(a => new SelectListItem
-                {
-                    Value = a.Id.ToString(),
-                    Text = a.Name
-                }).ToList();
-
-            return View(viewModel);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+            return View(section);
         }
 
         // GET: Sections/Edit/5
@@ -96,27 +82,18 @@ namespace StampSystem.Controllers
             {
                 return NotFound();
             }
-
-            var viewModel = new SectionViewModel
-            {
-                Section = section,
-                Administrations = _context.Administrations
-                    .Select(a => new SelectListItem
-                    {
-                        Value = a.Id.ToString(),
-                        Text = a.Name
-                    }).ToList()
-            };
-
-            return View(viewModel);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+            return View(section);
         }
 
         // POST: Sections/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, SectionViewModel viewModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,HeadName,AdministrationId")] Section section)
         {
-            if (id != viewModel.Section.Id)
+            if (id != section.Id)
             {
                 return NotFound();
             }
@@ -125,12 +102,12 @@ namespace StampSystem.Controllers
             {
                 try
                 {
-                    _context.Update(viewModel.Section);
+                    _context.Update(section);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SectionExists(viewModel.Section.Id))
+                    if (!SectionExists(section.Id))
                     {
                         return NotFound();
                     }
@@ -141,15 +118,8 @@ namespace StampSystem.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-
-            viewModel.Administrations = _context.Administrations
-                .Select(a => new SelectListItem
-                {
-                    Value = a.Id.ToString(),
-                    Text = a.Name
-                }).ToList();
-
-            return View(viewModel);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+            return View(section);
         }
 
         // GET: Sections/Delete/5

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Source\\Repos\\Stampsystem\\StampSystem\\StampSystem.csproj": {}
+    "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\StampSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Source\\Repos\\Stampsystem\\StampSystem\\StampSystem.csproj": {
+    "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\StampSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Source\\Repos\\Stampsystem\\StampSystem\\StampSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\StampSystem.csproj",
         "projectName": "StampSystem",
-        "projectPath": "C:\\Users\\DELL\\Source\\Repos\\Stampsystem\\StampSystem\\StampSystem.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Source\\Repos\\Stampsystem\\StampSystem\\obj\\",
+        "projectPath": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\StampSystem.csproj",
+        "packagesPath": "C:\\Users\\Watmutairi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Watmutairi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[8.0.19, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -61,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -92,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

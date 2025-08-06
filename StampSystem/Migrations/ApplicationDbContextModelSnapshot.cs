@@ -21,7 +21,7 @@ namespace StampSystem.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Administration", b =>
+            modelBuilder.Entity("StampSystem.Models.Administration", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace StampSystem.Migrations
                     b.ToTable("Administrations");
                 });
 
-            modelBuilder.Entity("Section", b =>
+            modelBuilder.Entity("StampSystem.Models.Section", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -68,90 +68,7 @@ namespace StampSystem.Migrations
                     b.ToTable("Sections");
                 });
 
-            modelBuilder.Entity("StampSystem.Models.StampRequest", b =>
-                {
-                    b.Property<int>("RequestId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequestId"));
-
-                    b.Property<string>("DirectorRejectionReason")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EmployeeId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(5)");
-
-                    b.Property<string>("HRRejectionReason")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("IsApprovedByDirector")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsApprovedByHR")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Reason")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StampType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("RequestId");
-
-                    b.HasIndex("EmployeeId");
-
-                    b.ToTable("SealRequests");
-                });
-
-            modelBuilder.Entity("StampSystem.Models.Users", b =>
-                {
-                    b.Property<string>("EmployeeId")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
-
-                    b.Property<string>("Department")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NationalID")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
-                    b.HasKey("EmployeeId");
-
-                    b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("Unit", b =>
+            modelBuilder.Entity("StampSystem.Models.Unit", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -177,9 +94,68 @@ namespace StampSystem.Migrations
                     b.ToTable("Units");
                 });
 
-            modelBuilder.Entity("Section", b =>
+            modelBuilder.Entity("StampSystem.Models.UserRegistration", b =>
                 {
-                    b.HasOne("Administration", "Administration")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AdministrationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmployeeNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IDNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RejectionReason")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UnitId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdministrationId");
+
+                    b.HasIndex("SectionId");
+
+                    b.HasIndex("UnitId");
+
+                    b.ToTable("UserRegistrations");
+                });
+
+            modelBuilder.Entity("StampSystem.Models.Section", b =>
+                {
+                    b.HasOne("StampSystem.Models.Administration", "Administration")
                         .WithMany("Sections")
                         .HasForeignKey("AdministrationId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -188,20 +164,9 @@ namespace StampSystem.Migrations
                     b.Navigation("Administration");
                 });
 
-            modelBuilder.Entity("StampSystem.Models.StampRequest", b =>
+            modelBuilder.Entity("StampSystem.Models.Unit", b =>
                 {
-                    b.HasOne("StampSystem.Models.Users", "Users")
-                        .WithMany("StampRequest")
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Users");
-                });
-
-            modelBuilder.Entity("Unit", b =>
-                {
-                    b.HasOne("Section", "Section")
+                    b.HasOne("StampSystem.Models.Section", "Section")
                         .WithMany("Units")
                         .HasForeignKey("SectionId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -210,19 +175,35 @@ namespace StampSystem.Migrations
                     b.Navigation("Section");
                 });
 
-            modelBuilder.Entity("Administration", b =>
+            modelBuilder.Entity("StampSystem.Models.UserRegistration", b =>
+                {
+                    b.HasOne("StampSystem.Models.Administration", "Administration")
+                        .WithMany()
+                        .HasForeignKey("AdministrationId");
+
+                    b.HasOne("StampSystem.Models.Section", "Section")
+                        .WithMany()
+                        .HasForeignKey("SectionId");
+
+                    b.HasOne("StampSystem.Models.Unit", "Unit")
+                        .WithMany()
+                        .HasForeignKey("UnitId");
+
+                    b.Navigation("Administration");
+
+                    b.Navigation("Section");
+
+                    b.Navigation("Unit");
+                });
+
+            modelBuilder.Entity("StampSystem.Models.Administration", b =>
                 {
                     b.Navigation("Sections");
                 });
 
-            modelBuilder.Entity("Section", b =>
+            modelBuilder.Entity("StampSystem.Models.Section", b =>
                 {
                     b.Navigation("Units");
-                });
-
-            modelBuilder.Entity("StampSystem.Models.Users", b =>
-                {
-                    b.Navigation("StampRequest");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,4 +1,4 @@
-﻿@model Section
+﻿@model StampSystem.Models.Section
 
 @{
     ViewData["Title"] = "Details";
@@ -26,7 +26,7 @@
             @Html.DisplayNameFor(model => model.Administration)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Administration.Name)
+            @Html.DisplayFor(model => model.Administration.ManagerName)
         </dd>
     </dl>
 </div>

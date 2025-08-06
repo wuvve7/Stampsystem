@@ -1,9 +1,12 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
+using StampSystem.Models;
 
 namespace StampSystem.Controllers
 {
@@ -19,20 +22,25 @@ namespace StampSystem.Controllers
         // GET: Units
         public async Task<IActionResult> Index()
         {
-            var units = _context.Units.Include(u => u.Section);
-            return View(await units.ToListAsync());
+            var applicationDbContext = _context.Units.Include(u => u.Section);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Units/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null) return NotFound();
+            if (id == null)
+            {
+                return NotFound();
+            }
 
             var unit = await _context.Units
                 .Include(u => u.Section)
                 .FirstOrDefaultAsync(m => m.Id == id);
-
-            if (unit == null) return NotFound();
+            if (unit == null)
+            {
+                return NotFound();
+            }
 
             return View(unit);
         }
@@ -40,107 +48,95 @@ namespace StampSystem.Controllers
         // GET: Units/Create
         public IActionResult Create()
         {
-            var viewModel = new UnitViewModel
-            {
-                Section = _context.Sections
-                    .Select(s => new SelectListItem
-                    {
-                        Value = s.Id.ToString(),
-                        Text = s.Name
-                    })
-            };
-
-            return View(viewModel);
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name");
+            return View();
         }
 
         // POST: Units/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(UnitViewModel viewModel)
+        public async Task<IActionResult> Create([Bind("Id,Name,HeadName,SectionId")] Unit unit)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(viewModel.Unit);
+                _context.Add(unit);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
-            viewModel.Section = _context.Sections
-                .Select(s => new SelectListItem
-                {
-                    Value = s.Id.ToString(),
-                    Text = s.Name
-                });
-
-            return View(viewModel);
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+            return View(unit);
         }
 
         // GET: Units/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null) return NotFound();
+            if (id == null)
+            {
+                return NotFound();
+            }
 
             var unit = await _context.Units.FindAsync(id);
-            if (unit == null) return NotFound();
-
-            var viewModel = new UnitViewModel
+            if (unit == null)
             {
-                Unit = unit,
-                Section = _context.Sections
-                    .Select(s => new SelectListItem
-                    {
-                        Value = s.Id.ToString(),
-                        Text = s.Name
-                    })
-            };
-
-            return View(viewModel);
+                return NotFound();
+            }
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+            return View(unit);
         }
 
         // POST: Units/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, UnitViewModel viewModel)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,HeadName,SectionId")] Unit unit)
         {
-            if (id != viewModel.Unit.Id) return NotFound();
+            if (id != unit.Id)
+            {
+                return NotFound();
+            }
 
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(viewModel.Unit);
+                    _context.Update(unit);
                     await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UnitExists(viewModel.Unit.Id))
+                    if (!UnitExists(unit.Id))
+                    {
                         return NotFound();
+                    }
                     else
+                    {
                         throw;
+                    }
                 }
+                return RedirectToAction(nameof(Index));
             }
-
-            viewModel.Section = _context.Sections
-                .Select(s => new SelectListItem
-                {
-                    Value = s.Id.ToString(),
-                    Text = s.Name
-                });
-
-            return View(viewModel);
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+            return View(unit);
         }
 
         // GET: Units/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null) return NotFound();
+            if (id == null)
+            {
+                return NotFound();
+            }
 
             var unit = await _context.Units
                 .Include(u => u.Section)
                 .FirstOrDefaultAsync(m => m.Id == id);
-
-            if (unit == null) return NotFound();
+            if (unit == null)
+            {
+                return NotFound();
+            }
 
             return View(unit);
         }
@@ -154,9 +150,9 @@ namespace StampSystem.Controllers
             if (unit != null)
             {
                 _context.Units.Remove(unit);
-                await _context.SaveChangesAsync();
             }
 
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
