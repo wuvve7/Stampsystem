@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
 using StampSystem.Models;
+using StampSystem.Utility;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StampSystem.Controllers
 {
+    [Authorize(Roles = CD.Role_HR)]
     public class AdministrationsController : Controller
     {
         private readonly ApplicationDbContext _context;
