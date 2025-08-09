@@ -1,126 +1,294 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\P\\source\\repos\\Stampsystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\hrreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\hrreview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\hrreview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\hrreview.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\models\\administration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\administration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\utility\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\utility\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807104658_UpdateUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250807104658_UpdateUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\registrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\registrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\section.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\controllers\\administrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\administrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\models\\administration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\models\\administration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\controllers\\sectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224540_FixRoleField.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809224540_FixRoleField.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224118_AddMissingFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809224118_AddMissingFields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\myrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\myrequests\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\hr\\reject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\hr\\reject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\hr\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\myrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\myrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250809121259_fixregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250809121259_fixregistrationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\units\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\units\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\email.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\email.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\units\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\units\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\enableauthenticator.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\externallogin.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250808212939_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250808212939_status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250808212939_status.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250808212939_status.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\loginwithrecoverycode.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\loginwithrecoverycode.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\loginwith2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\loginwith2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\resendemailconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\resendemailconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\twofactorauthentication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\twofactorauthentication.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\downloadpersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\downloadpersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\disable2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\disable2fa.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\forgotpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\confirmemailchange.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\confirmemailchange.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\account\\confirmemail.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\areas\\identity\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\utility\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\utility\\cd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807104658_updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807104658_updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\sectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\sectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\unitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\controllers\\administrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\controllers\\administrationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807082739_updateapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807090448_extendidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807090448_extendidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807082739_updateapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807082739_updateapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\utility\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807064208_..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807064208_..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807064208_..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807064526_addidentitytables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807064526_addidentitytables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807064526_addidentitytables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250807064221_addapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250807064221_addapplicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\units\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\units\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\units\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\administrations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\administrations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\administrations\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\watmutairi\\source\\repos\\stampsystem\\stampsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\sections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\sections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|c:\\users\\p\\source\\repos\\stampsystem\\stampsystem\\migrations\\20250808135706_addnotmappedrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAC860E-0F8A-4974-A1A4-C7F7107AD345}|StampSystem\\StampSystem.csproj|solutionrelative:stampsystem\\migrations\\20250808135706_addnotmappedrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,119 +298,732 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAIUAAAAuAAAAAAAAAA==",
+              "Title": "20250809232445_UpdateUserRelations.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809232445_UpdateUserRelations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T07:42:39.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HRReview.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml",
-              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml",
-              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-07T11:42:39.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwD0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-07T08:44:51.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HRReview.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml.cs",
-              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\HRReview.cshtml.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowCcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T11:42:49.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Administration.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Administration.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Models\\Administration.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Administration.cs",
-              "RelativeToolTip": "StampSystem\\Models\\Administration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T08:01:45.861Z",
+              "WhenOpened": "2025-08-09T23:24:45.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "StampSystem\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "StampSystem\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T06:31:48.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\RegistrationRequest.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Models\\RegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\RegistrationRequest.cs",
+              "RelativeToolTip": "StampSystem\\Models\\RegistrationRequest.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAxwCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T21:02:41.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAAANkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:42:39.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "StampSystem\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T08:48:38.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Section.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Section.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Models\\Section.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Section.cs",
+              "RelativeToolTip": "StampSystem\\Models\\Section.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T09:56:59.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Unit.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Unit.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Models\\Unit.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Unit.cs",
+              "RelativeToolTip": "StampSystem\\Models\\Unit.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T07:36:42.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "StampSystem\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:27:23.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Program.cs",
               "RelativeDocumentMoniker": "StampSystem\\Program.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Program.cs",
               "RelativeToolTip": "StampSystem\\Program.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowD4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T06:45:51.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "Administration.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Administration.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Models\\Administration.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Models\\Administration.cs",
+              "RelativeToolTip": "StampSystem\\Models\\Administration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T08:01:45.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAowLYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-07T08:44:51.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\HR\\Index.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\HR\\Index.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\HR\\Index.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\HR\\Index.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:24:29.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Reject.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\HR\\Reject.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\HR\\Reject.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\HR\\Reject.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\HR\\Reject.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:27:03.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20250809224540_FixRoleField.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224540_FixRoleField.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809224540_FixRoleField.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224540_FixRoleField.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809224540_FixRoleField.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:45:41.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "StampSystem\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwBwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:01:32.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\MyRequests\\Index.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\MyRequests\\Index.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\MyRequests\\Index.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\MyRequests\\Index.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:29:18.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20250809224118_AddMissingFields.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224118_AddMissingFields.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809224118_AddMissingFields.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809224118_AddMissingFields.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809224118_AddMissingFields.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:41:18.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T22:30:29.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250809221722_AddEmailPhoneToRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809221722_AddEmailPhoneToRegistrationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:17:23.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HRController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\HRController.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Controllers\\HRController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\HRController.cs",
+              "RelativeToolTip": "StampSystem\\Controllers\\HRController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv0sAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:05:21.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MyRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\MyRequestsController.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Controllers\\MyRequestsController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\MyRequestsController.cs",
+              "RelativeToolTip": "StampSystem\\Controllers\\MyRequestsController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T22:08:48.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250809121259_FixRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809121259_FixRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809121259_FixRegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809121259_FixRegistrationRequest.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809121259_FixRegistrationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T12:12:59.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250809121135_FixRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809121135_FixRegistrationRequest.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T12:11:35.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20250809120600_FixRegistrationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809120600_FixRegistrationRequest.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T12:06:01.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250809115806_UpdateRolesSystem.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250809115806_UpdateRolesSystem.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T11:58:06.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ExternalLogin.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ExternalLogin.cshtml.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAIBJwJ8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T10:15:36.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\Units\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Delete.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\Units\\Delete.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAtwB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T10:45:20.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAtwD8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T10:56:12.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Index.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\Units\\Index.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Index.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\Units\\Index.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAtwCQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T10:56:36.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Views\\Sections\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Delete.cshtml",
+              "RelativeToolTip": "StampSystem\\Views\\Sections\\Delete.cshtml",
+              "ViewState": "AgIAABMAAAAAAAAAAAAtwB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T11:20:28.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Email.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Email.cshtml.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAIBJwFIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:53.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20250808212939_status.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808212939_status.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250808212939_status.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808212939_status.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250808212939_status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T10:40:58.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "StampSystem.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs",
+              "RelativeToolTip": "StampSystem\\obj\\Debug\\net8.0\\StampSystem.AssemblyInfo.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T10:32:36.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EnableAuthenticator.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\EnableAuthenticator.cshtml.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAApwJUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:47.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250808212939_status.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808212939_status.Designer.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250808212939_status.Designer.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808212939_status.Designer.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250808212939_status.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T10:15:43.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ResendEmailConfirmation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAtwA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:20:01.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RegisterConfirmation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAtwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:20:09.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginWith2fa.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:20:23.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginWithRecoveryCode.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:20:39.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:20:47.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T23:19:38.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAtwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:19:33.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "TwoFactorAuthentication.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAtwAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:19:18.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ExternalLogins.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAtwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:42.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DownloadPersonalData.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAtwA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:31.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Disable2fa.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\Disable2fa.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAlwBEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:17.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "DeletePersonalData.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:18:12.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAtwBAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:17:50.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ForgotPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAtwA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:17:45.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ConfirmEmailChange.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwAwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:17:25.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ConfirmEmail.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAlwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:15:09.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ChangePassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAApwAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:14:57.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAYwEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-07T09:14:35.113Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 53,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "StampSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "RelativeToolTip": "StampSystem\\Areas\\Identity\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T22:07:56.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20250808135706_AddNotMappedRole.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808135706_AddNotMappedRole.cs",
+              "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250808135706_AddNotMappedRole.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250808135706_AddNotMappedRole.cs",
+              "RelativeToolTip": "StampSystem\\Migrations\\20250808135706_AddNotMappedRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T13:57:06.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
               "Title": "CD.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Utility\\CD.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Utility\\CD.cs",
               "RelativeDocumentMoniker": "StampSystem\\Utility\\CD.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Utility\\CD.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Utility\\CD.cs",
               "RelativeToolTip": "StampSystem\\Utility\\CD.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -251,54 +1032,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Section.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Section.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Models\\Section.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Section.cs",
-              "RelativeToolTip": "StampSystem\\Models\\Section.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T09:56:59.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Unit.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Unit.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Models\\Unit.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\Unit.cs",
-              "RelativeToolTip": "StampSystem\\Models\\Unit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T07:36:42.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "StampSystem\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T06:27:23.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 55,
               "Title": "20250807104658_UpdateUser.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807104658_UpdateUser.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -307,11 +1045,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 56,
               "Title": "SectionsController.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\SectionsController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\SectionsController.cs",
               "RelativeDocumentMoniker": "StampSystem\\Controllers\\SectionsController.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\SectionsController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\SectionsController.cs",
               "RelativeToolTip": "StampSystem\\Controllers\\SectionsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,11 +1058,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 57,
               "Title": "UnitsController.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\UnitsController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\UnitsController.cs",
               "RelativeDocumentMoniker": "StampSystem\\Controllers\\UnitsController.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\UnitsController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\UnitsController.cs",
               "RelativeToolTip": "StampSystem\\Controllers\\UnitsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -333,11 +1071,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 58,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StampSystem\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\HomeController.cs",
               "RelativeToolTip": "StampSystem\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -346,24 +1084,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "StampSystem\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "StampSystem\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T08:48:38.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 59,
               "Title": "AdministrationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\AdministrationsController.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\AdministrationsController.cs",
               "RelativeDocumentMoniker": "StampSystem\\Controllers\\AdministrationsController.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Controllers\\AdministrationsController.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Controllers\\AdministrationsController.cs",
               "RelativeToolTip": "StampSystem\\Controllers\\AdministrationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -372,11 +1097,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 60,
               "Title": "20250807090448_ExtendIdentityUser.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807090448_ExtendIdentityUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -385,24 +1110,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 61,
               "Title": "20250807082739_UpdateApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807082739_UpdateApplicationUser.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAEBlwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-07T08:27:39.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 62,
               "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Utility\\EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Utility\\EmailSender.cs",
               "RelativeDocumentMoniker": "StampSystem\\Utility\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Utility\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Utility\\EmailSender.cs",
               "RelativeToolTip": "StampSystem\\Utility\\EmailSender.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -411,11 +1136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 63,
               "Title": "20250807064208_..cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064208_..cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064208_..cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807064208_..cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064208_..cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064208_..cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807064208_..cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -424,11 +1149,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 64,
               "Title": "20250807064526_addIdentityTables.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807064526_addIdentityTables.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -437,11 +1162,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 65,
               "Title": "20250807064221_AddApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
               "RelativeDocumentMoniker": "StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
               "RelativeToolTip": "StampSystem\\Migrations\\20250807064221_AddApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -450,75 +1175,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 66,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Units\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Create.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Units\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Units\\Create.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Units\\Create.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Units\\Create.cshtml",
               "ViewState": "AgIAABYAAAAAAAAAAAAowB4AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T10:17:20.168Z"
+              "WhenOpened": "2025-08-06T10:17:20.168Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 67,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Create.cshtml",
-              "RelativeDocumentMoniker": "StampSystem\\Views\\Sections\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Create.cshtml",
-              "RelativeToolTip": "StampSystem\\Views\\Sections\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T09:56:20.472Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Administrations\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Administrations\\Create.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Administrations\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Administrations\\Create.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Administrations\\Create.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Administrations\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T09:09:29.016Z"
+              "WhenOpened": "2025-08-06T09:09:29.016Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 68,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Index.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Sections\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Index.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Index.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Sections\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBZwCQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T10:12:49.079Z"
+              "WhenOpened": "2025-08-06T10:12:49.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 69,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Edit.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Sections\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Sections\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Sections\\Edit.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Sections\\Edit.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBZwBwAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T10:13:17.836Z"
+              "WhenOpened": "2025-08-06T10:13:17.836Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 70,
               "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Watmutairi\\source\\repos\\StampSystem\\StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\P\\source\\repos\\Stampsystem\\StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeToolTip": "StampSystem\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-06T07:37:59.941Z"
+              "WhenOpened": "2025-08-06T07:37:59.941Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -10,21 +10,29 @@ namespace StampSystem.Models
         public string FullName { get; set; }
         [Required]
         public string NationalID{ get; set; }
+        
         [Required]
         public int EmployeeId { get; set; }
-        [Required]
+        
         public int? AdministrationId { get; set; } 
-        public Administration Administration { get; set; }
+        public Administration? Administration { get; set; }
 
         // ربط المستخدم بالقسم
         public int? SectionId { get; set; }
-        public Section Section { get; set; }
+        public Section? Section { get; set; }
 
         // ربط المستخدم بالوحدة
         public int? UnitId { get; set; }
-        public string Unit { get; set; }
+        public Unit? Unit { get; set; }
 
-        public string Status { get; set; } = "Panding"; // حالة الطلبات المعلقة
-        public object Role { get; internal set; }
+        public string? AdministrationName { get; set; }
+        public string? SectionName { get; set; }
+        public string? UnitName { get; set; }
+        public string Role { get; set; }
+
+
+
+        public string Status { get; set; } = "Pending"; // Pending, Approved, Rejected
+        public string? RejectionReason { get; set; } // سبب الرفض إذا فيه رفض
     }
 }

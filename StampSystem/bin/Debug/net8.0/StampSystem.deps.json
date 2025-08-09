@@ -9,7 +9,7 @@
       "StampSystem/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.19",
-          "Microsoft.AspNetCore.Identity.UI": "8.0.11",
+          "Microsoft.AspNetCore.Identity.UI": "9.0.8",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.11",
@@ -626,18 +626,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.UI/8.0.11": {
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Embedded": "8.0.11",
-          "Microsoft.Extensions.Identity.Stores": "8.0.19"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.AspNetCore.Identity.UI.dll": {
-            "assemblyVersion": "8.0.11.0",
-            "fileVersion": "8.0.1124.52116"
-          }
-        }
-      },
+      "Microsoft.AspNetCore.Identity.UI/9.0.8": {},
       "Microsoft.AspNetCore.Razor.Language/6.0.24": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1431,22 +1420,6 @@
           "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "9.0.0.8",
             "fileVersion": "9.0.825.36511"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.8"
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Embedded/8.0.11": {
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0"
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Extensions.FileProviders.Embedded.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1124.52116"
           }
         }
       },
@@ -2696,12 +2669,12 @@
       "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.19",
       "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.19.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Identity.UI/8.0.11": {
+    "Microsoft.AspNetCore.Identity.UI/9.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bsfAQ4cY7MlmlounB1/IWe6tEgh7H4fp4fQS61GadxjKSrliiAGFy5BjEGCJzUhwCx2XqzWaYrXB0T1kmsF3vQ==",
-      "path": "microsoft.aspnetcore.identity.ui/8.0.11",
-      "hashPath": "microsoft.aspnetcore.identity.ui.8.0.11.nupkg.sha512"
+      "sha512": "sha512-Luw13WeJQejnNKfB3raQn995CX/FSwU29p+1Q7YSDltnaf1Fy9jm36FCk8W2LOsZxqOludLxbSsItlfoZu1z7g==",
+      "path": "microsoft.aspnetcore.identity.ui/9.0.8",
+      "hashPath": "microsoft.aspnetcore.identity.ui.9.0.8.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
@@ -2968,20 +2941,6 @@
       "sha512": "sha512-3CW02zNjyqJ2eORo8Zkznpw6+QvK+tYUKZgKuKuAIYdy73TRFvpaqCwYws1k6/lMSJ7ZqABfWn0/wa5bRsIJ4w==",
       "path": "microsoft.extensions.dependencymodel/9.0.8",
       "hashPath": "microsoft.extensions.dependencymodel.9.0.8.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
-      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Embedded/8.0.11": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1tn+c7d628+dASqo0UezdeWdKrEpp2XA376MUkr4nFYDj295iPWeWOV8rOvgR0Gma1xfOEjNJur1QvS6AVnjng==",
-      "path": "microsoft.extensions.fileproviders.embedded/8.0.11",
-      "hashPath": "microsoft.extensions.fileproviders.embedded.8.0.11.nupkg.sha512"
     },
     "Microsoft.Extensions.Identity.Core/8.0.19": {
       "type": "package",

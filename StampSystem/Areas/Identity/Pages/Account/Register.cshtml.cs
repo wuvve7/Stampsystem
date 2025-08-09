@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
 using StampSystem.Models;
 using StampSystem.Utility;
@@ -13,23 +14,24 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Policy;
 using System.Text;
 using System.Text.Encodings.Web;
+//using static System.Net.Mime.MediaTypeNames;
 
 public class RegisterModel : PageModel
 {
-    private readonly SignInManager<IdentityUser> _signInManager;
+    private readonly SignInManager<ApplicationUser> _signInManager;
     private readonly RoleManager<IdentityRole> _roleManager;
-    private readonly UserManager<IdentityUser> _userManager;
-    private readonly IUserStore<IdentityUser> _userStore;
-    private readonly IUserEmailStore<IdentityUser> _emailStore;
+    private readonly UserManager<ApplicationUser> _userManager;
+    private readonly IUserStore<ApplicationUser> _userStore;
+    private readonly IUserEmailStore<ApplicationUser> _emailStore;
     private readonly ILogger<RegisterModel> _logger;
     private readonly IEmailSender _emailSender;
     private readonly ApplicationDbContext _context;
-
+    
     public RegisterModel(
-        UserManager<IdentityUser> userManager,
+        UserManager<ApplicationUser> userManager,
         RoleManager<IdentityRole> roleManager,
-        IUserStore<IdentityUser> userStore,
-        SignInManager<IdentityUser> signInManager,
+        IUserStore<ApplicationUser> userStore,
+        SignInManager<ApplicationUser> signInManager,
         ILogger<RegisterModel> logger,
         IEmailSender emailSender,
         ApplicationDbContext context)
@@ -44,12 +46,14 @@ public class RegisterModel : PageModel
         _context = context;
     }
 
+    public List<SelectListItem>? AdministrationList { get; private set; } = new List<SelectListItem>();
+    public List<SelectListItem>? SectionList { get; private set; } = new List<SelectListItem>();
+    public List<SelectListItem>? RoleList { get; set; } = new List<SelectListItem>();
+
+
     [BindProperty]
     public InputModel Input { get; set; }
-    public IList<SelectListItem> SectionList { get; set; }
-    public IList<SelectListItem> UnitList { get; set; }
-    public IList<SelectListItem> Administrations { get; set; } // إضافة قائمة الإدارات
-
+    
     public string ReturnUrl { get; set; }
     public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
@@ -71,29 +75,34 @@ public class RegisterModel : PageModel
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        [Display(Name = "Role List")]
         public string? Role { get; set; }
-        public IEnumerable<SelectListItem> RoleList { get; set; }
-
-        public int? AdministrationId { get; set; } // تغيير من "Administration" إلى "AdministrationId"
         
 
-        [Required]
         public string FullName { get; set; }
-
         [Required]
+        [Display(Name = "National ID")]
         public string NationalID { get; set; }
-
         [Required]
         public int EmployeeId { get; set; }
-    }
+        [Display(Name = "Administration")]
+        public int? AdministrationId { get; set; } // Dropdown
+        public string? AdministrationName { get; set; } // Textbox
 
-    public IList<SelectListItem> GetSectionList()
-    {
-        return SectionList;
+        public int? SectionId { get; set; } // Dropdown
+        public string? SectionName { get; set; } // Textbox
+
+        public string? UnitName { get; set; } // Always textbox
+        
+        [Required]
+        public string Status { get; set; } = "pending"; // Default status
+
+        [Required]
+        public string PhoneNumber { get; set; }
     }
 
     // When the page is requested (GET)
-    public async Task OnGetAsync(IList<SelectListItem> sectionList, string returnUrl = null)
+    public async Task OnGetAsync( string returnUrl = null)
     {
         if (!await _roleManager.RoleExistsAsync(CD.Role_HR))
         {
@@ -103,29 +112,92 @@ public class RegisterModel : PageModel
             await _roleManager.CreateAsync(new IdentityRole(CD.Role_UnitManager));
         }
 
-        Input = new InputModel
-        {
-            RoleList = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
-            {
-                Text = i,
-                Value = i
-            })
-        };
 
         
+            RoleList = _roleManager.Roles.Select(x =>new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            }).ToList();
+        
 
-        ReturnUrl = returnUrl;
+        AdministrationList = _context.Administrations
+    .Select(a => new SelectListItem { Value = a.Id.ToString(), Text = a.Name }).ToList();
+
+        SectionList = _context.Sections
+            .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Name }).ToList();
+
+        ReturnUrl = returnUrl?? Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
+        Input = new InputModel();
     }
 
     // When the form is posted (POST)
-    public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+    public async Task<IActionResult> OnPostAsync( string returnUrl = null)
     {
         returnUrl ??= Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
+        // تحقق حسب الدور
+        if (Input.Role == "DivisionDirector" && string.IsNullOrWhiteSpace(Input.AdministrationName))
+        {
+            ModelState.AddModelError("Input.AdministrationName", "اسم الإدارة مطلوب لمدير الإدارة.");
+        }
+        else if (Input.Role == "SectionManager")
+        {
+            if (!Input.AdministrationId.HasValue)
+            {
+                ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
+            }
+            if (string.IsNullOrWhiteSpace(Input.SectionName))
+            {
+                ModelState.AddModelError("Input.SectionName", "اسم القسم مطلوب لرئيس القسم.");
+            }
+        }
+        else if (Input.Role == "UnitManager")
+        {
+            if (!Input.AdministrationId.HasValue)
+            {
+                ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
+            }
+            if (!Input.SectionId.HasValue)
+            {
+                ModelState.AddModelError("Input.SectionId", "اختر القسم أولاً.");
+            }
+            if (string.IsNullOrWhiteSpace(Input.UnitName))
+            {
+                ModelState.AddModelError("Input.UnitName", "اسم الوحدة مطلوب لرئيس الوحدة.");
+            }
+        }
+
+        if (!ModelState.IsValid)
+        {
+            // أعد ملء القوائم dropdown قبل عرض الصفحة
+            RoleList = _roleManager.Roles.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            }).ToList();
+
+            AdministrationList = _context.Administrations.Select(a => new SelectListItem
+            {
+                Value = a.Id.ToString(),
+                Text = a.Name
+            }).ToList();
+
+            SectionList = _context.Sections.Select(s => new SelectListItem
+            {
+                Value = s.Id.ToString(),
+                Text = s.Name
+            }).ToList();
+
+            return Page();
+        }
+
         if (ModelState.IsValid)
         {
+            
             var user = new ApplicationUser
             {
                 UserName = Input.Email,
@@ -133,10 +205,50 @@ public class RegisterModel : PageModel
                 FullName = Input.FullName,
                 NationalID = Input.NationalID,
                 EmployeeId = Input.EmployeeId,
-                AdministrationId = Input.AdministrationId,  // تأكد من أن هذا هو ID وليس الكائن
-                  // تأكد من استخدام SectionId بدلاً من Section
-                
+               // Role = Input.Role,
+                PhoneNumber = Input.PhoneNumber,
+                Status = "pending", // Default status
             };
+            // ======= هنا تبدأ التعديلات =======
+            if (Input.Role == "DivisionDirector")
+            {
+                if (!string.IsNullOrWhiteSpace(Input.AdministrationName))
+                {
+                    // تحقق إذا الإدارة موجودة مسبقًا
+                    var existingAdmin = await _context.Administrations
+                        .FirstOrDefaultAsync(a => a.Name == Input.AdministrationName);
+
+                    if (existingAdmin == null)
+                    {
+                        // إنشاء إدارة جديدة وحفظها
+                        var newAdmin = new Administration { Name = Input.AdministrationName };
+                        _context.Administrations.Add(newAdmin);
+                        await _context.SaveChangesAsync();
+
+                        // ربط المستخدم بالإدارة الجديدة
+                        user.AdministrationId = newAdmin.Id;
+                    }
+                    else
+                    {
+                        // لو الإدارة موجودة، اربط المستخدم بها
+                        user.AdministrationId = existingAdmin.Id;
+                    }
+                }
+            }
+            else if (Input.Role == "SectionManager")
+            {
+                // ربط المستخدم بالإدارة المختارة (من dropdown)
+                user.AdministrationId = Input.AdministrationId;
+
+                // إضافة اسم القسم (يمكنك أيضاً حفظه في جدول أقسام حسب تصميمك)
+                user.SectionName = Input.SectionName;
+            }
+            else if (Input.Role == "UnitManager")
+            {
+                user.AdministrationId = Input.AdministrationId;
+                user.SectionId = Input.SectionId;
+                user.UnitName = Input.UnitName;
+            }
 
             var result = await _userManager.CreateAsync(user, Input.Password);
 
@@ -178,6 +290,24 @@ public class RegisterModel : PageModel
             }
         }
 
+        RoleList = _roleManager.Roles.Select(x => new SelectListItem
+        {
+            Text = x.Name,
+            Value = x.Name
+        }).ToList();
+
+        AdministrationList = _context.Administrations.Select(a => new SelectListItem
+        {
+            Value = a.Id.ToString(),
+            Text = a.Name
+        }).ToList();
+
+        SectionList = _context.Sections.Select(s => new SelectListItem
+        {
+            Value = s.Id.ToString(),
+            Text = s.Name
+        }).ToList();
+
         return Page();
     }
 
@@ -194,12 +324,12 @@ public class RegisterModel : PageModel
         }
     }
 
-    private IUserEmailStore<IdentityUser> GetEmailStore()
+    private IUserEmailStore<ApplicationUser> GetEmailStore()
     {
         if (!_userManager.SupportsUserEmail)
         {
             throw new NotSupportedException("The default UI requires a user store with email support.");
         }
-        return (IUserEmailStore<IdentityUser>)_userStore;
+        return (IUserEmailStore<ApplicationUser>)_userStore;
     }
 }
