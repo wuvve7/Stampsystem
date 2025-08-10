@@ -122,10 +122,10 @@ public class RegisterModel : PageModel
         
 
         AdministrationList = _context.Administrations
-    .Select(a => new SelectListItem { Value = a.Id.ToString(), Text = a.Name }).ToList();
+    .Select(a => new SelectListItem { Value = a.Id.ToString(), Text = a.AdministrationName }).ToList();
 
         SectionList = _context.Sections
-            .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.Name }).ToList();
+            .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.SectionName }).ToList();
 
         ReturnUrl = returnUrl?? Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -134,7 +134,7 @@ public class RegisterModel : PageModel
     }
 
     // When the form is posted (POST)
-    public async Task<IActionResult> OnPostAsync( string returnUrl = null)
+    public async Task<IActionResult> OnPostAsync(string returnUrl = null)
     {
         returnUrl ??= Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -170,10 +170,13 @@ public class RegisterModel : PageModel
                 ModelState.AddModelError("Input.UnitName", "اسم الوحدة مطلوب لرئيس الوحدة.");
             }
         }
+        if (string.IsNullOrEmpty(Input.Role))
+        {
+            ModelState.AddModelError("Input.Role", "Please select a role.");
+        }
 
         if (!ModelState.IsValid)
         {
-            // أعد ملء القوائم dropdown قبل عرض الصفحة
             RoleList = _roleManager.Roles.Select(x => new SelectListItem
             {
                 Text = x.Name,
@@ -183,133 +186,78 @@ public class RegisterModel : PageModel
             AdministrationList = _context.Administrations.Select(a => new SelectListItem
             {
                 Value = a.Id.ToString(),
-                Text = a.Name
+                Text = a.AdministrationName
             }).ToList();
 
             SectionList = _context.Sections.Select(s => new SelectListItem
             {
                 Value = s.Id.ToString(),
-                Text = s.Name
+                Text = s.SectionName
             }).ToList();
 
             return Page();
         }
 
-        if (ModelState.IsValid)
+        // إنشاء كائن الطلب الجديد
+        var registrationRequest = new RegistrationRequest
         {
-            
-            var user = new ApplicationUser
+            //Name = Input.Email,
+            Email = Input.Email,
+            FullName = Input.FullName,
+            NationalID = Input.NationalID,
+            EmployeeId = Input.EmployeeId,
+            Role = Input.Role ?? "",
+            PhoneNumber = Input.PhoneNumber,
+            Status = "pending",  // في انتظار الموافقة
+        };
+
+        // ربط الإدارات والأقسام حسب الدور
+        if (Input.Role == "DivisionDirector")
+        {
+            if (!string.IsNullOrWhiteSpace(Input.AdministrationName))
             {
-                UserName = Input.Email,
-                Email = Input.Email,
-                FullName = Input.FullName,
-                NationalID = Input.NationalID,
-                EmployeeId = Input.EmployeeId,
-               // Role = Input.Role,
-                PhoneNumber = Input.PhoneNumber,
-                Status = "pending", // Default status
-            };
-            // ======= هنا تبدأ التعديلات =======
-            if (Input.Role == "DivisionDirector")
-            {
-                if (!string.IsNullOrWhiteSpace(Input.AdministrationName))
+                var existingAdmin = await _context.Administrations
+                    .FirstOrDefaultAsync(a => a.AdministrationName == Input.AdministrationName);
+
+                if (existingAdmin == null)
                 {
-                    // تحقق إذا الإدارة موجودة مسبقًا
-                    var existingAdmin = await _context.Administrations
-                        .FirstOrDefaultAsync(a => a.Name == Input.AdministrationName);
-
-                    if (existingAdmin == null)
-                    {
-                        // إنشاء إدارة جديدة وحفظها
-                        var newAdmin = new Administration { Name = Input.AdministrationName };
-                        _context.Administrations.Add(newAdmin);
-                        await _context.SaveChangesAsync();
-
-                        // ربط المستخدم بالإدارة الجديدة
-                        user.AdministrationId = newAdmin.Id;
-                    }
-                    else
-                    {
-                        // لو الإدارة موجودة، اربط المستخدم بها
-                        user.AdministrationId = existingAdmin.Id;
-                    }
-                }
-            }
-            else if (Input.Role == "SectionManager")
-            {
-                // ربط المستخدم بالإدارة المختارة (من dropdown)
-                user.AdministrationId = Input.AdministrationId;
-
-                // إضافة اسم القسم (يمكنك أيضاً حفظه في جدول أقسام حسب تصميمك)
-                user.SectionName = Input.SectionName;
-            }
-            else if (Input.Role == "UnitManager")
-            {
-                user.AdministrationId = Input.AdministrationId;
-                user.SectionId = Input.SectionId;
-                user.UnitName = Input.UnitName;
-            }
-
-            var result = await _userManager.CreateAsync(user, Input.Password);
-
-            if (result.Succeeded)
-            {
-                _logger.LogInformation("User created a new account with password.");
-
-                if (!string.IsNullOrEmpty(Input.Role))
-                {
-                    await _userManager.AddToRoleAsync(user, Input.Role);
-                }
-
-                var userId = await _userManager.GetUserIdAsync(user);
-                var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                var callbackUrl = Url.Page(
-                    "/Account/ConfirmEmail",
-                    pageHandler: null,
-                    values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
-                    protocol: Request.Scheme);
-
-                await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                if (_userManager.Options.SignIn.RequireConfirmedAccount)
-                {
-                    return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                    var newAdmin = new Administration { AdministrationName = Input.AdministrationName };
+                    _context.Administrations.Add(newAdmin);
+                    await _context.SaveChangesAsync();
+                    registrationRequest.AdministrationId = newAdmin.Id;
                 }
                 else
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-                    return LocalRedirect(returnUrl);
+                    registrationRequest.AdministrationId = existingAdmin.Id;
                 }
             }
-
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError(string.Empty, error.Description);
-            }
+        }
+        else if (Input.Role == "SectionManager")
+        {
+            registrationRequest.AdministrationId = Input.AdministrationId;
+            registrationRequest.SectionName = Input.SectionName;
+        }
+        else if (Input.Role == "UnitManager")
+        {
+            registrationRequest.AdministrationId = Input.AdministrationId;
+            registrationRequest.SectionId = Input.SectionId;
+            registrationRequest.UnitName = Input.UnitName;
         }
 
-        RoleList = _roleManager.Roles.Select(x => new SelectListItem
-        {
-            Text = x.Name,
-            Value = x.Name
-        }).ToList();
+        // إضافة الطلب إلى قاعدة البيانات
+        _context.RegistrationRequests.Add(registrationRequest);
+        await _context.SaveChangesAsync();
 
-        AdministrationList = _context.Administrations.Select(a => new SelectListItem
-        {
-            Value = a.Id.ToString(),
-            Text = a.Name
-        }).ToList();
 
-        SectionList = _context.Sections.Select(s => new SelectListItem
-        {
-            Value = s.Id.ToString(),
-            Text = s.Name
-        }).ToList();
+        // إرسال رسالة تأكيد (اختياري)
+        // await _emailSender.SendEmailAsync(...);
 
-        return Page();
+        // إعادة توجيه المستخدم إلى صفحة تأكيد التسجيل مع انتظار الموافقة
+        return RedirectToAction("RegistrationPending", "RegistrationRequests");
+
     }
+
+
 
     private IdentityUser CreateUser()
     {

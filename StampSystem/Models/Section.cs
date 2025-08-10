@@ -7,7 +7,7 @@ namespace StampSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; } = string.Empty;
+        public string SectionName { get; set; } = string.Empty;
 
 
         public string HeadName { get; set; } = string.Empty;

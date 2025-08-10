@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations;
 using StampSystem.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StampSystem.Models
 {
@@ -10,11 +11,17 @@ namespace StampSystem.Models
         public string FullName { get; set; }
         [Required]
         public string NationalID{ get; set; }
-        
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string PhoneNumber { get; set; }
+
         [Required]
         public int EmployeeId { get; set; }
         
-        public int? AdministrationId { get; set; } 
+
+
+        public int?  AdministrationId { get; set; }
         public Administration? Administration { get; set; }
 
         // ربط المستخدم بالقسم
@@ -24,11 +31,14 @@ namespace StampSystem.Models
         // ربط المستخدم بالوحدة
         public int? UnitId { get; set; }
         public Unit? Unit { get; set; }
-
+        [NotMapped]
         public string? AdministrationName { get; set; }
+        [NotMapped]
         public string? SectionName { get; set; }
+        [NotMapped]
         public string? UnitName { get; set; }
-        public string Role { get; set; }
+        [Required(ErrorMessage = "Role is required.")]
+        public string?Role { get; set; }
 
 
 

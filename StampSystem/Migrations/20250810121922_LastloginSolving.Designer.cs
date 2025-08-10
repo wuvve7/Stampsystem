@@ -12,8 +12,8 @@ using StampSystem.Data;
 namespace StampSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250809221722_AddEmailPhoneToRegistrationRequest")]
-    partial class AddEmailPhoneToRegistrationRequest
+    [Migration("20250810121922_LastloginSolving")]
+    partial class LastloginSolving
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -166,11 +166,11 @@ namespace StampSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ManagerName")
+                    b.Property<string>("AdministrationName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("ManagerName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -195,6 +195,7 @@ namespace StampSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
@@ -230,12 +231,17 @@ namespace StampSystem.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
                     b.Property<string>("RejectionReason")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("SectionId")
@@ -285,7 +291,7 @@ namespace StampSystem.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AdministrationId")
+                    b.Property<int?>("AdministrationId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
@@ -320,14 +326,14 @@ namespace StampSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SectionId")
+                    b.Property<int?>("SectionId")
                         .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UnitId")
+                    b.Property<int?>("UnitId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -356,7 +362,7 @@ namespace StampSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("SectionName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -379,12 +385,12 @@ namespace StampSystem.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("SectionId")
                         .HasColumnType("int");
+
+                    b.Property<string>("UnitName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -448,15 +454,18 @@ namespace StampSystem.Migrations
                 {
                     b.HasOne("StampSystem.Models.Administration", "Administration")
                         .WithMany()
-                        .HasForeignKey("AdministrationId");
+                        .HasForeignKey("AdministrationId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StampSystem.Models.Section", "Section")
                         .WithMany()
-                        .HasForeignKey("SectionId");
+                        .HasForeignKey("SectionId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StampSystem.Models.Unit", "Unit")
                         .WithMany()
-                        .HasForeignKey("UnitId");
+                        .HasForeignKey("UnitId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Administration");
 
@@ -470,20 +479,17 @@ namespace StampSystem.Migrations
                     b.HasOne("StampSystem.Models.Administration", "Administration")
                         .WithMany()
                         .HasForeignKey("AdministrationId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StampSystem.Models.Section", "Section")
                         .WithMany()
                         .HasForeignKey("SectionId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("StampSystem.Models.Unit", "Unit")
                         .WithMany()
                         .HasForeignKey("UnitId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Administration");
 

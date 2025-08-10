@@ -49,7 +49,9 @@
                 <select asp-for="Input.Role"
 						asp-items="@Model.RoleList"
 						class="form-select"
-						id="Input_Role"><option disabled selected>-- Select Role --</option></select>
+                        id="Input_Role">
+                    <option value="" disabled selected>-- Select Role --</option>
+                </select>
             </div>
             <!-- Dropdown للإدارة -->
             <div class="form-floating mb-3" id="adminDropdownDiv">

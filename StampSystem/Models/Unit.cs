@@ -7,7 +7,7 @@ namespace StampSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string UnitName { get; set; }
 
         // رئيس الوحدة
         public string HeadName { get; set; }

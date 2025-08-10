@@ -5,7 +5,7 @@
 namespace StampSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class FixRoleField : Migration
+    public partial class LastloginSolving : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

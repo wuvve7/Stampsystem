@@ -584,10 +584,8 @@ C:\Users\DELL\Source\Repos\Stampsystem\StampSystem\obj\Debug\net8.0\StampSys.A5E
 C:\Users\DELL\Source\Repos\Stampsystem\StampSystem\obj\Debug\net8.0\StampSystem.genruntimeconfig.cache
 C:\Users\DELL\Source\Repos\Stampsystem\StampSystem\obj\Debug\net8.0\ref\StampSystem.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\obj\Debug\net8.0\StampSystem.sourcelink.json
-C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\Microsoft.Data.Sqlite.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -611,7 +609,6 @@ C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\runtim
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\obj\Debug\net8.0\StampSystem.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\P\Source\Repos\Stampsystem\StampSystem\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\P\Source\Repos\Stampsystem\StampSystem\bin\Debug\net8.0\appsettings.json
 C:\Users\P\Source\Repos\Stampsystem\StampSystem\bin\Debug\net8.0\StampSystem.staticwebassets.runtime.json
