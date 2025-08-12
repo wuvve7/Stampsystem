@@ -139,7 +139,7 @@ public class RegisterModel : PageModel
         returnUrl ??= Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-        // تحقق حسب الدور
+        // التحقق من صحة الإدخالات حسب الدور
         if (Input.Role == "DivisionDirector" && string.IsNullOrWhiteSpace(Input.AdministrationName))
         {
             ModelState.AddModelError("Input.AdministrationName", "اسم الإدارة مطلوب لمدير الإدارة.");
@@ -170,6 +170,7 @@ public class RegisterModel : PageModel
                 ModelState.AddModelError("Input.UnitName", "اسم الوحدة مطلوب لرئيس الوحدة.");
             }
         }
+
         if (string.IsNullOrEmpty(Input.Role))
         {
             ModelState.AddModelError("Input.Role", "Please select a role.");
@@ -177,6 +178,7 @@ public class RegisterModel : PageModel
 
         if (!ModelState.IsValid)
         {
+            // إعادة تحميل القوائم
             RoleList = _roleManager.Roles.Select(x => new SelectListItem
             {
                 Text = x.Name,
@@ -198,8 +200,116 @@ public class RegisterModel : PageModel
             return Page();
         }
 
-        // إنشاء كائن الطلب الجديد
-        var registrationRequest = new RegistrationRequest
+        // هنا نطبق إضافة/تحديث الإدارات والأقسام والوحدات حسب الدور
+        if (Input.Role == "DivisionDirector" && !string.IsNullOrWhiteSpace(Input.AdministrationName))
+        {
+            var existingAdmin = await _context.Administrations
+                .FirstOrDefaultAsync(a => a.AdministrationName == Input.AdministrationName);
+
+            if (existingAdmin == null)
+            {
+                var newAdmin = new Administration { AdministrationName = Input.AdministrationName };
+                _context.Administrations.Add(newAdmin);
+                await _context.SaveChangesAsync();
+                Input.AdministrationId = newAdmin.Id;
+            }
+            else
+            {
+                Input.AdministrationId = existingAdmin.Id;
+            }
+        }
+        else if (Input.Role == "SectionManager")
+        {
+            // ممكن تضيف هنا لو تبي إنشاء قسم جديد بنفس الطريقة لو ما موجود
+            // لكن حسب الكود الحالي تفترض أنه تم اختيار قسم موجود
+        }
+        else if (Input.Role == "UnitManager")
+        {
+            // نفس الشيء للوحدة، ممكن تضيف إنشاء جديد هنا لو تحب
+        }
+
+        // إنشاء كائن المستخدم مع القيم المحدثة
+        var user = new ApplicationUser
+        {
+            UserName = Input.Email,
+            Email = Input.Email,
+            FullName = Input.FullName,
+            NationalID = Input.NationalID,
+            PhoneNumber = Input.PhoneNumber,
+            EmployeeId = Input.EmployeeId,
+            AdministrationId = Input.AdministrationId,
+            SectionId = Input.SectionId,
+            UnitName = Input.UnitName,
+            Role = Input.Role,
+            Status = "Pending"
+        };
+
+        var result = await _userManager.CreateAsync(user, Input.Password);
+
+        if (result.Succeeded)
+        {
+            var roleResult = await _userManager.AddToRoleAsync(user, Input.Role);
+            if (!roleResult.Succeeded)
+            {
+                await _userManager.DeleteAsync(user);
+                ModelState.AddModelError("", "فشل في تعيين الدور للمستخدم.");
+                // إعادة تحميل القوائم قبل إعادة الصفحة
+                RoleList = _roleManager.Roles.Select(x => new SelectListItem
+                {
+                    Text = x.Name,
+                    Value = x.Name
+                }).ToList();
+
+                AdministrationList = _context.Administrations.Select(a => new SelectListItem
+                {
+                    Value = a.Id.ToString(),
+                    Text = a.AdministrationName
+                }).ToList();
+
+                SectionList = _context.Sections.Select(s => new SelectListItem
+                {
+                    Value = s.Id.ToString(),
+                    Text = s.SectionName
+                }).ToList();
+
+                return Page();
+            }
+
+            return RedirectToAction("RegistrationPending", "RegistrationRequests");
+        }
+        else
+        {
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError("", error.Description);
+            }
+
+            // إعادة تحميل القوائم قبل إعادة الصفحة
+            RoleList = _roleManager.Roles.Select(x => new SelectListItem
+            {
+                Text = x.Name,
+                Value = x.Name
+            }).ToList();
+
+            AdministrationList = _context.Administrations.Select(a => new SelectListItem
+            {
+                Value = a.Id.ToString(),
+                Text = a.AdministrationName
+            }).ToList();
+
+            SectionList = _context.Sections.Select(s => new SelectListItem
+            {
+                Value = s.Id.ToString(),
+                Text = s.SectionName
+            }).ToList();
+
+            return Page();
+        }
+    }
+
+
+    /* إنشاء كائن الطلب الجديد
+    var registrationRequest = new RegistrationRequest
         {
             //Name = Input.Email,
             Email = Input.Email,
@@ -256,7 +366,7 @@ public class RegisterModel : PageModel
         return RedirectToAction("RegistrationPending", "RegistrationRequests");
 
     }
-
+    */
 
 
     private IdentityUser CreateUser()

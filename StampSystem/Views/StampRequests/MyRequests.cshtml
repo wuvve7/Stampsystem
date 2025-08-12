@@ -1,0 +1,25 @@
+﻿@model IEnumerable<StampSystem.Models.StampRequest>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>الرقم المرجعي</th>
+            <th>نوع الختم</th>
+            <th>الغرض</th>
+            <th>الحالة</th>
+            <th>تفاصيل</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ReferenceNumber</td>
+            <td>@item.StampType</td>
+            <td>@item.Purpose</td>
+            <td>@item.Status</td>
+            <td><a asp-action="Details" asp-route-id="@item.Id">عرض</a></td>
+        </tr>
+    }
+    </tbody>
+</table>

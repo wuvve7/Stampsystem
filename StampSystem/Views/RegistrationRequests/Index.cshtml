@@ -1,34 +1,50 @@
-﻿<table>
-    <thead>...</thead>
+﻿@model IEnumerable<ApplicationUser>
+
+<table>
+    <thead>
+        <tr>
+            <th>الاسم الكامل</th>
+            <th>البريد</th>
+            <th>الحالة</th>
+            <th>سبب الرفض</th>
+            <th>الإجراءات</th>
+        </tr>
+    </thead>
     <tbody>
-        @foreach (var request in Model)
-        {
-            <tr>
-                <td>@request.FullName</td>
-                <!-- بيانات أخرى -->
-                <td>
+    @foreach(var user in Model)
+    {
+        <tr>
+            <td>@user.FullName</td>
+            <td>@user.Email</td>
+            <td>@user.Status</td>
+            <td>@user.RejectionReason</td>
+            <td>
+                @if(user.Status != "Approved")
+                {
                     <form asp-action="Approve" method="post" style="display:inline;">
-                        <input type="hidden" name="id" value="@request.Id" />
-                        <button type="submit" class="btn btn-success btn-sm">Approve</button>
+                        <input type="hidden" name="userId" value="@user.Id" />
+                        <button type="submit">موافقة</button>
                     </form>
+                }
+                @if(user.Status != "Rejected")
+                {
+                    <button data-toggle="modal" data-target="#rejectModal_@user.Id">رفض</button>
 
-                    <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#rejectModal_@request.Id">Reject</button>
-
-                    <!-- نموذج الرفض modal -->
-                    <div class="modal fade" id="rejectModal_@request.Id" tabindex="-1">
+                    <div class="modal fade" id="rejectModal_@user.Id" tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <form asp-action="Reject" method="post">
-                                    <input type="hidden" name="id" value="@request.Id" />
-                                    <textarea name="reason" required></textarea>
-                                    <button type="submit" class="btn btn-danger">Reject</button>
-                                    <button type="button" data-dismiss="modal">Cancel</button>
+                                    <input type="hidden" name="userId" value="@user.Id" />
+                                    <textarea name="reason" required placeholder="سبب الرفض"></textarea>
+                                    <button type="submit">رفض</button>
+                                    <button type="button" data-dismiss="modal">إلغاء</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </td>
-            </tr>
-        }
+                }
+            </td>
+        </tr>
+    }
     </tbody>
 </table>

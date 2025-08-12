@@ -1,0 +1,53 @@
+﻿@model IEnumerable<StampSystem.Models.StampRequest>
+@{
+    ViewData["Title"] = "طلبات في انتظار موافقة المدير";
+}
+
+<h2>طلبات في انتظار موافقة المدير</h2>
+
+<!-- إشعارات -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>رقم الطلب</th>
+            <th>اسم مقدم الطلب</th>
+            <th>نوع الختم</th>
+            <th>الغرض</th>
+            <th>تاريخ الطلب</th>
+            <th>إجراءات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ReferenceNumber</td>
+                <td>@item.Requester.FullName</td>
+                <td>@item.StampType</td>
+                <td>@item.Purpose</td>
+                <td>@item.RequestDate.ToString("yyyy-MM-dd")</td>
+                <td>
+                    <form asp-action="ApproveByManager" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <input type="text" name="notes" placeholder="ملاحظات (اختياري)" />
+                        <button type="submit" class="btn btn-success btn-sm">موافقة</button>
+                    </form>
+                    <form asp-action="RejectByManager" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <input type="text" name="reason" placeholder="سبب الرفض" required />
+                        <button type="submit" class="btn btn-danger btn-sm">رفض</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

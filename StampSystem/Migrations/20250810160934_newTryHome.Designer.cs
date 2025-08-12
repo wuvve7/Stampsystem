@@ -12,8 +12,8 @@ using StampSystem.Data;
 namespace StampSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250810121922_LastloginSolving")]
-    partial class LastloginSolving
+    [Migration("20250810160934_newTryHome")]
+    partial class newTryHome
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

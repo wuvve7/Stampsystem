@@ -1,0 +1,18 @@
+﻿@model StampSystem.Models.StampRequest
+
+<h2>تفاصيل طلب الختم</h2>
+
+<div>
+    <p><strong>رقم المرجعي:</strong> @Model.ReferenceNumber</p>
+    <p><strong>نوع الختم:</strong> @Model.StampType</p>
+    <p><strong>الغرض:</strong> @Model.Purpose</p>
+    <p><strong>تاريخ الطلب:</strong> @Model.RequestDate.ToString("yyyy-MM-dd HH:mm")</p>
+    <p><strong>الحالة الحالية:</strong> @Model.Status</p>
+
+    @if (!string.IsNullOrEmpty(Model.ApprovalNotes))
+    {
+        <p><strong>ملاحظات / سبب الرفض (إن وجد):</strong> @Model.ApprovalNotes</p>
+    }
+</div>
+
+<a asp-action="MyRequests">رجوع إلى طلباتي</a>

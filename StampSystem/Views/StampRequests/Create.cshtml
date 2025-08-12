@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "طلب ختم جديد";
+}
+
+<h2>طلب ختم جديد</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>نوع الختم</label>
+        <select name="stampType" class="form-control" required>
+            <option value="شخصي">شخصي</option>
+            <option value="رسمي">رسمي</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>الغرض</label>
+        <textarea name="purpose" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+</form>

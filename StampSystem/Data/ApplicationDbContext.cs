@@ -15,6 +15,7 @@ namespace StampSystem.Data
         public DbSet<Section> Sections { get; set; }
         public DbSet<Unit> Units { get; set; }
         public DbSet<RegistrationRequest> RegistrationRequests { get; set; }
+        public DbSet<StampRequest> StampRequests { get; set; }
 
 
 

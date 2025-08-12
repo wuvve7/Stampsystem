@@ -12,8 +12,8 @@ using StampSystem.Data;
 namespace StampSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250810081450_FixPendingChanges")]
-    partial class FixPendingChanges
+    [Migration("20250810183815_StampRequests")]
+    partial class StampRequests
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -373,6 +373,57 @@ namespace StampSystem.Migrations
                     b.ToTable("Sections");
                 });
 
+            modelBuilder.Entity("StampSystem.Models.StampRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AdministrationId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ApprovalNotes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Purpose")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReferenceNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RequestDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RequesterId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int?>("SectionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("StampType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UnitId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RequesterId");
+
+                    b.ToTable("StampRequests");
+                });
+
             modelBuilder.Entity("StampSystem.Models.Unit", b =>
                 {
                     b.Property<int>("Id")
@@ -507,6 +558,17 @@ namespace StampSystem.Migrations
                         .IsRequired();
 
                     b.Navigation("Administration");
+                });
+
+            modelBuilder.Entity("StampSystem.Models.StampRequest", b =>
+                {
+                    b.HasOne("StampSystem.Models.ApplicationUser", "Requester")
+                        .WithMany()
+                        .HasForeignKey("RequesterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Requester");
                 });
 
             modelBuilder.Entity("StampSystem.Models.Unit", b =>

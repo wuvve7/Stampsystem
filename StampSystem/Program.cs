@@ -61,58 +61,11 @@ var app = builder.Build();
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
 
-await SeedHRUserAsync(app);
+
 
 app.Run();
 
 
 
-async Task SeedHRUserAsync(IApplicationBuilder app)
-{
-    using var scope = app.ApplicationServices.CreateScope();
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-
-    if (!await roleManager.RoleExistsAsync("HR"))
-    {
-        await roleManager.CreateAsync(new IdentityRole("HR"));
-    }
-
-    var hrUser = await userManager.FindByEmailAsync("HR@gmail.com");
-    if (hrUser == null)
-    {
-        hrUser = new ApplicationUser
-        {
-            UserName = "HR@gmail.com",
-            Email = "HR@gmail.com",
-            FullName = "HR Manager",
-            Status = "Approved",
-            Role = "HR",
-            PhoneNumber = "0000000000",
-            NationalID = "0000000000",
-            EmployeeId = 76161,
-            AdministrationId = 1, // قيم موجودة فعلياً في قاعدة البيانات
-            SectionId = 1,        // قيم موجودة فعلياً
-            UnitId = 1             // قيم موجودة فعلياً
-        };
-
-        var result = await userManager.CreateAsync(hrUser, "HrDefault123!");
-        if (result.Succeeded)
-        {
-            await userManager.AddToRoleAsync(hrUser, "HR");
-        }
-    }
-    else
-    {
-        if (!await userManager.IsInRoleAsync(hrUser, "HR"))
-            await userManager.AddToRoleAsync(hrUser, "HR");
-
-        if (hrUser.Status != "Approved")
-        {
-            hrUser.Status = "Approved";
-            await userManager.UpdateAsync(hrUser);
-        }
-    }
-}
 // Fix for CS0106: Remove 'private' modifier from top-level method
 // Fix for CS1998: Add 'await' operator to use asynchronous RoleManager API

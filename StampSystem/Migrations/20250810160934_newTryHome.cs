@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace StampSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class FixPendingChanges : Migration
+    public partial class newTryHome : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -15,7 +15,9 @@ namespace StampSystem.Migrations
                 name: "FK_AspNetUsers_Sections_SectionId",
                 table: "AspNetUsers");
 
-            
+           /* migrationBuilder.DropColumn(
+                name: "Administration",
+                table: "AspNetUsers");*/
 
             migrationBuilder.DropColumn(
                 name: "Discriminator",
@@ -31,10 +33,10 @@ namespace StampSystem.Migrations
                 table: "Sections",
                 newName: "SectionName");
 
-            migrationBuilder.RenameColumn(
+            /*migrationBuilder.RenameColumn(
                 name: "Unit",
                 table: "AspNetUsers",
-                newName: "RejectionReason");
+                newName: "RejectionReason");*/
 
             migrationBuilder.RenameColumn(
                 name: "Name",
@@ -93,7 +95,11 @@ namespace StampSystem.Migrations
                 oldMaxLength: 256,
                 oldNullable: true);
 
-            
+           /* migrationBuilder.AddColumn<int>(
+                name: "AdministrationId",
+                table: "AspNetUsers",
+                type: "int",
+                nullable: true);
 
             migrationBuilder.AddColumn<string>(
                 name: "Role",
@@ -107,9 +113,9 @@ namespace StampSystem.Migrations
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
                 nullable: false,
-                defaultValue: "");
+                defaultValue: "");*/
 
-            migrationBuilder.CreateTable(
+            /*migrationBuilder.CreateTable(
                 name: "RegistrationRequests",
                 columns: table => new
                 {
@@ -131,6 +137,7 @@ namespace StampSystem.Migrations
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_RegistrationRequests", x => x.Id);
                     table.ForeignKey(
                         name: "FK_RegistrationRequests_Administrations_AdministrationId",
                         column: x => x.AdministrationId,
@@ -150,7 +157,7 @@ namespace StampSystem.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
-
+            
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_AdministrationId",
                 table: "AspNetUsers",
@@ -176,7 +183,13 @@ namespace StampSystem.Migrations
                 table: "RegistrationRequests",
                 column: "UnitId");
 
-            
+            migrationBuilder.AddForeignKey(
+                name: "FK_AspNetUsers_Administrations_AdministrationId",
+                table: "AspNetUsers",
+                column: "AdministrationId",
+                principalTable: "Administrations",
+                principalColumn: "Id",
+                onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUsers_Sections_SectionId",
@@ -192,7 +205,7 @@ namespace StampSystem.Migrations
                 column: "UnitId",
                 principalTable: "Units",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+                onDelete: ReferentialAction.Restrict);*/
         }
 
         /// <inheritdoc />

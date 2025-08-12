@@ -1,0 +1,31 @@
+﻿@model IEnumerable<StampSystem.Models.StampRequest>
+
+<h2>Completed Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Reference Number</th>
+            <th>Requester</th>
+            <th>Stamp Type</th>
+            <th>Purpose</th>
+            <th>Status</th>
+            <th>Request Date</th>
+            <th>Approval Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var req in Model)
+        {
+            <tr>
+                <td>@req.ReferenceNumber</td>
+                <td>@req.Requester.FullName</td>
+                <td>@req.StampType</td>
+                <td>@req.Purpose</td>
+                <td>@req.Status</td>
+                <td>@req.RequestDate.ToString("yyyy-MM-dd")</td>
+                <td>@req.ApprovalNotes</td>
+            </tr>
+        }
+    </tbody>
+</table>
