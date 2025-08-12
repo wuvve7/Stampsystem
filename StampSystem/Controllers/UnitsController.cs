@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
 using StampSystem.Models;
 using StampSystem.Utility;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StampSystem.Controllers
 {
@@ -25,42 +23,21 @@ namespace StampSystem.Controllers
         // GET: Units
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Units.Include(u => u.Section);
-            return View(await applicationDbContext.ToListAsync());
-        }
-
-        // GET: Units/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var unit = await _context.Units
-                .Include(u => u.Section)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (unit == null)
-            {
-                return NotFound();
-            }
-
-            return View(unit);
+            var units = _context.Units.Include(u => u.Section);
+            return View(await units.ToListAsync());
         }
 
         // GET: Units/Create
         public IActionResult Create()
         {
-            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name");
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "SectionName");
             return View();
         }
 
         // POST: Units/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,HeadName,SectionId")] Unit unit)
+        public async Task<IActionResult> Create([Bind("Id,UnitName,HeadName,SectionId")] Unit unit)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +45,7 @@ namespace StampSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "SectionName", unit.SectionId);
             return View(unit);
         }
 
@@ -76,30 +53,23 @@ namespace StampSystem.Controllers
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
             var unit = await _context.Units.FindAsync(id);
             if (unit == null)
-            {
                 return NotFound();
-            }
-            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "SectionName", unit.SectionId);
             return View(unit);
         }
 
         // POST: Units/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,HeadName,SectionId")] Unit unit)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,UnitName,HeadName,SectionId")] Unit unit)
         {
             if (id != unit.Id)
-            {
                 return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
@@ -110,18 +80,30 @@ namespace StampSystem.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UnitExists(unit.Id))
-                    {
+                    if (!_context.Units.Any(e => e.Id == unit.Id))
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "Name", unit.SectionId);
+            ViewData["SectionId"] = new SelectList(_context.Sections, "Id", "SectionName", unit.SectionId);
+            return View(unit);
+        }
+
+        // GET: Units/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var unit = await _context.Units
+                .Include(u => u.Section)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (unit == null)
+                return NotFound();
+
             return View(unit);
         }
 
@@ -129,17 +111,14 @@ namespace StampSystem.Controllers
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
             var unit = await _context.Units
                 .Include(u => u.Section)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (unit == null)
-            {
                 return NotFound();
-            }
 
             return View(unit);
         }
@@ -153,15 +132,11 @@ namespace StampSystem.Controllers
             if (unit != null)
             {
                 _context.Units.Remove(unit);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        private bool UnitExists(int id)
-        {
-            return _context.Units.Any(e => e.Id == id);
-        }
+ 
     }
+
 }

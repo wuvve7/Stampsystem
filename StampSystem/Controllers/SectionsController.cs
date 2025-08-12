@@ -5,8 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
 using StampSystem.Models;
 using StampSystem.Utility;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -25,42 +23,21 @@ namespace StampSystem.Controllers
         // GET: Sections
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Sections.Include(s => s.Administration);
-            return View(await applicationDbContext.ToListAsync());
-        }
-
-        // GET: Sections/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var section = await _context.Sections
-                .Include(s => s.Administration)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (section == null)
-            {
-                return NotFound();
-            }
-
-            return View(section);
+            var sections = _context.Sections.Include(s => s.Administration);
+            return View(await sections.ToListAsync());
         }
 
         // GET: Sections/Create
         public IActionResult Create()
         {
-            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name");
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "AdministrationName");
             return View();
         }
 
         // POST: Sections/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,HeadName,AdministrationId")] Section section)
+        public async Task<IActionResult> Create([Bind("Id,SectionName,HeadName,AdministrationId")] Section section)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +45,7 @@ namespace StampSystem.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "AdministrationName", section.AdministrationId);
             return View(section);
         }
 
@@ -76,30 +53,23 @@ namespace StampSystem.Controllers
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
             var section = await _context.Sections.FindAsync(id);
             if (section == null)
-            {
                 return NotFound();
-            }
-            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "AdministrationName", section.AdministrationId);
             return View(section);
         }
 
         // POST: Sections/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,HeadName,AdministrationId")] Section section)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,SectionName,HeadName,AdministrationId")] Section section)
         {
             if (id != section.Id)
-            {
                 return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
@@ -111,17 +81,34 @@ namespace StampSystem.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     if (!SectionExists(section.Id))
-                    {
                         return NotFound();
-                    }
                     else
-                    {
                         throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "Name", section.AdministrationId);
+            ViewData["AdministrationId"] = new SelectList(_context.Administrations, "Id", "AdministrationName", section.AdministrationId);
+            return View(section);
+        }
+
+        private bool SectionExists(int id)
+        {
+            return _context.Sections.Any(e => e.Id == id);
+        }
+
+        // GET: Sections/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var section = await _context.Sections
+                .Include(s => s.Administration)
+                .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (section == null)
+                return NotFound();
+
             return View(section);
         }
 
@@ -129,17 +116,14 @@ namespace StampSystem.Controllers
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
             var section = await _context.Sections
                 .Include(s => s.Administration)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (section == null)
-            {
                 return NotFound();
-            }
 
             return View(section);
         }
@@ -153,15 +137,11 @@ namespace StampSystem.Controllers
             if (section != null)
             {
                 _context.Sections.Remove(section);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool SectionExists(int id)
-        {
-            return _context.Sections.Any(e => e.Id == id);
-        }
     }
+
 }

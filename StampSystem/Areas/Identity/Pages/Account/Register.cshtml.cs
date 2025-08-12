@@ -5,16 +5,13 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
 using StampSystem.Data;
 using StampSystem.Models;
 using StampSystem.Utility;
 using System.ComponentModel.DataAnnotations;
-using System.Security.Policy;
 using System.Text;
-using System.Text.Encodings.Web;
-//using static System.Net.Mime.MediaTypeNames;
+using System.Threading.Tasks;
 
 public class RegisterModel : PageModel
 {
@@ -26,7 +23,7 @@ public class RegisterModel : PageModel
     private readonly ILogger<RegisterModel> _logger;
     private readonly IEmailSender _emailSender;
     private readonly ApplicationDbContext _context;
-    
+
     public RegisterModel(
         UserManager<ApplicationUser> userManager,
         RoleManager<IdentityRole> roleManager,
@@ -46,14 +43,13 @@ public class RegisterModel : PageModel
         _context = context;
     }
 
-    public List<SelectListItem>? AdministrationList { get; private set; } = new List<SelectListItem>();
-    public List<SelectListItem>? SectionList { get; private set; } = new List<SelectListItem>();
-    public List<SelectListItem>? RoleList { get; set; } = new List<SelectListItem>();
-
+    public List<SelectListItem> AdministrationList { get; private set; } = new List<SelectListItem>();
+    public List<SelectListItem> SectionList { get; private set; } = new List<SelectListItem>();
+    public List<SelectListItem> RoleList { get; set; } = new List<SelectListItem>();
 
     [BindProperty]
     public InputModel Input { get; set; }
-    
+
     public string ReturnUrl { get; set; }
     public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
@@ -61,48 +57,59 @@ public class RegisterModel : PageModel
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Email")]
+        [Display(Name = "البريد الإلكتروني")]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "يجب أن تكون {0} بين {2} و {1} حروف.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "كلمة المرور")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Display(Name = "تأكيد كلمة المرور")]
+        [Compare("Password", ErrorMessage = "كلمة المرور وتأكيدها غير متطابقين.")]
         public string ConfirmPassword { get; set; }
 
-        [Display(Name = "Role List")]
-        public string? Role { get; set; }
-        
+        [Required(ErrorMessage = "الدور مطلوب")]
+        [Display(Name = "الدور")]
+        public string Role { get; set; }
 
+        [Required]
+        [Display(Name = "الاسم الكامل")]
         public string FullName { get; set; }
+
         [Required]
-        [Display(Name = "National ID")]
+        [Display(Name = "الرقم الوطني")]
         public string NationalID { get; set; }
+
         [Required]
+        [Display(Name = "رقم الموظف")]
         public int EmployeeId { get; set; }
-        [Display(Name = "Administration")]
-        public int? AdministrationId { get; set; } // Dropdown
-        public string? AdministrationName { get; set; } // Textbox
 
-        public int? SectionId { get; set; } // Dropdown
-        public string? SectionName { get; set; } // Textbox
+        [Display(Name = "الإدارة")]
+        public int? AdministrationId { get; set; } // اختيار من القائمة
 
-        public string? UnitName { get; set; } // Always textbox
-        
+        [Display(Name = "اسم الإدارة")]
+        public string? AdministrationName { get; set; } // نص حر (لـ DivisionDirector)
+
+        [Display(Name = "القسم")]
+        public int? SectionId { get; set; } // اختيار من القائمة
+
+        [Display(Name = "اسم القسم")]
+        public string? SectionName { get; set; } // نص حر (لـ SectionManager)
+
+        [Display(Name = "اسم الوحدة")]
+        public string? UnitName { get; set; } // نص حر (لـ UnitManager)
+
         [Required]
-        public string Status { get; set; } = "pending"; // Default status
-
-        [Required]
+        [Display(Name = "رقم الهاتف")]
         public string PhoneNumber { get; set; }
+
+        public string Status { get; set; } = "Pending";
     }
 
-    // When the page is requested (GET)
-    public async Task OnGetAsync( string returnUrl = null)
+    public async Task OnGetAsync(string returnUrl = null, int? administrationId = null)
     {
         if (!await _roleManager.RoleExistsAsync(CD.Role_HR))
         {
@@ -112,134 +119,146 @@ public class RegisterModel : PageModel
             await _roleManager.CreateAsync(new IdentityRole(CD.Role_UnitManager));
         }
 
+        RoleList = _roleManager.Roles.Select(r => new SelectListItem
+        {
+            Text = r.Name,
+            Value = r.Name
+        }).ToList();
 
-        
-            RoleList = _roleManager.Roles.Select(x =>new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Name
-            }).ToList();
-        
+        AdministrationList = await _context.Administrations
+            .Select(a => new SelectListItem { Value = a.Id.ToString(), Text = a.AdministrationName })
+            .ToListAsync();
 
-        AdministrationList = _context.Administrations
-    .Select(a => new SelectListItem { Value = a.Id.ToString(), Text = a.AdministrationName }).ToList();
+        if (administrationId.HasValue)
+        {
+            SectionList = await _context.Sections
+                .Where(s => s.AdministrationId == administrationId.Value)
+                .Select(s => new SelectListItem
+                {
+                    Value = s.Id.ToString(),
+                    Text = s.SectionName
+                }).ToListAsync();
 
-        SectionList = _context.Sections
-            .Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.SectionName }).ToList();
+            // إذا تريد تملأ الـ Input.AdministrationId بقيمة الـ administrationId اللي وصلتك:
+            Input.AdministrationId = administrationId;
+        }
+        else
+        {
+            SectionList = new List<SelectListItem>();
+        }
 
-        ReturnUrl = returnUrl?? Url.Content("~/");
+        ReturnUrl = returnUrl ?? Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-        Input = new InputModel();
+        if (Input == null)
+            Input = new InputModel();
     }
 
-    // When the form is posted (POST)
+
+
     public async Task<IActionResult> OnPostAsync(string returnUrl = null)
     {
         returnUrl ??= Url.Content("~/");
         ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-        // التحقق من صحة الإدخالات حسب الدور
-        if (Input.Role == "DivisionDirector" && string.IsNullOrWhiteSpace(Input.AdministrationName))
-        {
-            ModelState.AddModelError("Input.AdministrationName", "اسم الإدارة مطلوب لمدير الإدارة.");
-        }
-        else if (Input.Role == "SectionManager")
-        {
-            if (!Input.AdministrationId.HasValue)
-            {
-                ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
-            }
-            if (string.IsNullOrWhiteSpace(Input.SectionName))
-            {
-                ModelState.AddModelError("Input.SectionName", "اسم القسم مطلوب لرئيس القسم.");
-            }
-        }
-        else if (Input.Role == "UnitManager")
-        {
-            if (!Input.AdministrationId.HasValue)
-            {
-                ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
-            }
-            if (!Input.SectionId.HasValue)
-            {
-                ModelState.AddModelError("Input.SectionId", "اختر القسم أولاً.");
-            }
-            if (string.IsNullOrWhiteSpace(Input.UnitName))
-            {
-                ModelState.AddModelError("Input.UnitName", "اسم الوحدة مطلوب لرئيس الوحدة.");
-            }
-        }
-
+        // تحقق من صحة الإدخالات بناء على الدور
         if (string.IsNullOrEmpty(Input.Role))
         {
-            ModelState.AddModelError("Input.Role", "Please select a role.");
+            ModelState.AddModelError("Input.Role", "الرجاء اختيار الدور.");
+        }
+        else
+        {
+            switch (Input.Role)
+            {
+                case CD.Role_DivisionDirector:
+                    if (string.IsNullOrWhiteSpace(Input.AdministrationName))
+                        ModelState.AddModelError("Input.AdministrationName", "اسم الإدارة مطلوب لمدير الإدارة.");
+                    break;
+
+                case CD.Role_SectionManager:
+                    if (!Input.AdministrationId.HasValue)
+                        ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
+                    if (string.IsNullOrWhiteSpace(Input.SectionName))
+                        ModelState.AddModelError("Input.SectionName", "اسم القسم مطلوب لرئيس القسم.");
+                    break;
+
+                case CD.Role_UnitManager:
+                    if (!Input.AdministrationId.HasValue)
+                        ModelState.AddModelError("Input.AdministrationId", "اختر الإدارة أولاً.");
+                    if (!Input.SectionId.HasValue)
+                        ModelState.AddModelError("Input.SectionId", "اختر القسم أولاً.");
+                    if (string.IsNullOrWhiteSpace(Input.UnitName))
+                        ModelState.AddModelError("Input.UnitName", "اسم الوحدة مطلوب لرئيس الوحدة.");
+                    break;
+            }
         }
 
         if (!ModelState.IsValid)
         {
-            // إعادة تحميل القوائم
-            RoleList = _roleManager.Roles.Select(x => new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Name
-            }).ToList();
-
-            AdministrationList = _context.Administrations.Select(a => new SelectListItem
-            {
-                Value = a.Id.ToString(),
-                Text = a.AdministrationName
-            }).ToList();
-
-            SectionList = _context.Sections.Select(s => new SelectListItem
-            {
-                Value = s.Id.ToString(),
-                Text = s.SectionName
-            }).ToList();
-
+            await LoadDropDownListsAsync(Input.AdministrationId);
             return Page();
         }
 
-        // هنا نطبق إضافة/تحديث الإدارات والأقسام والوحدات حسب الدور
-        if (Input.Role == "DivisionDirector" && !string.IsNullOrWhiteSpace(Input.AdministrationName))
+        // إنشاء أو جلب الإدارة/القسم/الوحدة حسب الدور
+        if (Input.Role == CD.Role_DivisionDirector)
         {
-            var existingAdmin = await _context.Administrations
+            var admin = await _context.Administrations
                 .FirstOrDefaultAsync(a => a.AdministrationName == Input.AdministrationName);
 
-            if (existingAdmin == null)
+            if (admin == null)
             {
-                var newAdmin = new Administration { AdministrationName = Input.AdministrationName };
-                _context.Administrations.Add(newAdmin);
+                admin = new Administration { AdministrationName = Input.AdministrationName };
+                _context.Administrations.Add(admin);
                 await _context.SaveChangesAsync();
-                Input.AdministrationId = newAdmin.Id;
             }
-            else
+            Input.AdministrationId = admin.Id;
+        }
+        else if (Input.Role == CD.Role_SectionManager)
+        {
+            var section = await _context.Sections
+                .FirstOrDefaultAsync(s => s.SectionName == Input.SectionName && s.AdministrationId == Input.AdministrationId);
+
+            if (section == null)
             {
-                Input.AdministrationId = existingAdmin.Id;
+                section = new Section
+                {
+                    SectionName = Input.SectionName,
+                    AdministrationId = Input.AdministrationId.Value
+                };
+                _context.Sections.Add(section);
+                await _context.SaveChangesAsync();
             }
+            Input.SectionId = section.Id;
         }
-        else if (Input.Role == "SectionManager")
+        else if (Input.Role == CD.Role_UnitManager)
         {
-            // ممكن تضيف هنا لو تبي إنشاء قسم جديد بنفس الطريقة لو ما موجود
-            // لكن حسب الكود الحالي تفترض أنه تم اختيار قسم موجود
-        }
-        else if (Input.Role == "UnitManager")
-        {
-            // نفس الشيء للوحدة، ممكن تضيف إنشاء جديد هنا لو تحب
+            var unit = await _context.Units
+                .FirstOrDefaultAsync(u => u.UnitName == Input.UnitName && u.SectionId == Input.SectionId);
+
+            if (unit == null)
+            {
+                unit = new Unit
+                {
+                    UnitName = Input.UnitName,
+                    SectionId = Input.SectionId.Value
+                };
+                _context.Units.Add(unit);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        // إنشاء كائن المستخدم مع القيم المحدثة
+        // إنشاء المستخدم
         var user = new ApplicationUser
         {
             UserName = Input.Email,
             Email = Input.Email,
             FullName = Input.FullName,
             NationalID = Input.NationalID,
-            PhoneNumber = Input.PhoneNumber,
             EmployeeId = Input.EmployeeId,
+            PhoneNumber = Input.PhoneNumber,
             AdministrationId = Input.AdministrationId,
             SectionId = Input.SectionId,
-            UnitName = Input.UnitName,
+            UnitId = Input.Role == CD.Role_UnitManager ? _context.Units.FirstOrDefault(u => u.UnitName == Input.UnitName && u.SectionId == Input.SectionId)?.Id : null,
             Role = Input.Role,
             Status = "Pending"
         };
@@ -253,121 +272,44 @@ public class RegisterModel : PageModel
             {
                 await _userManager.DeleteAsync(user);
                 ModelState.AddModelError("", "فشل في تعيين الدور للمستخدم.");
-                // إعادة تحميل القوائم قبل إعادة الصفحة
-                RoleList = _roleManager.Roles.Select(x => new SelectListItem
-                {
-                    Text = x.Name,
-                    Value = x.Name
-                }).ToList();
-
-                AdministrationList = _context.Administrations.Select(a => new SelectListItem
-                {
-                    Value = a.Id.ToString(),
-                    Text = a.AdministrationName
-                }).ToList();
-
-                SectionList = _context.Sections.Select(s => new SelectListItem
-                {
-                    Value = s.Id.ToString(),
-                    Text = s.SectionName
-                }).ToList();
-
+                await LoadDropDownListsAsync(Input.AdministrationId);
                 return Page();
             }
 
             return RedirectToAction("RegistrationPending", "RegistrationRequests");
         }
-        else
-        {
-            foreach (var error in result.Errors)
-            {
-                ModelState.AddModelError("", error.Description);
-            }
 
-            // إعادة تحميل القوائم قبل إعادة الصفحة
-            RoleList = _roleManager.Roles.Select(x => new SelectListItem
-            {
-                Text = x.Name,
-                Value = x.Name
-            }).ToList();
+        foreach (var error in result.Errors)
+            ModelState.AddModelError("", error.Description);
 
-            AdministrationList = _context.Administrations.Select(a => new SelectListItem
-            {
-                Value = a.Id.ToString(),
-                Text = a.AdministrationName
-            }).ToList();
-
-            SectionList = _context.Sections.Select(s => new SelectListItem
-            {
-                Value = s.Id.ToString(),
-                Text = s.SectionName
-            }).ToList();
-
-            return Page();
-        }
+        await LoadDropDownListsAsync(Input.AdministrationId);
+        return Page();
     }
 
-
-    /* إنشاء كائن الطلب الجديد
-    var registrationRequest = new RegistrationRequest
+    private async Task LoadDropDownListsAsync(int? administrationId = null)
+    {
+        RoleList = _roleManager.Roles.Select(r => new SelectListItem
         {
-            //Name = Input.Email,
-            Email = Input.Email,
-            FullName = Input.FullName,
-            NationalID = Input.NationalID,
-            EmployeeId = Input.EmployeeId,
-            Role = Input.Role ?? "",
-            PhoneNumber = Input.PhoneNumber,
-            Status = "pending",  // في انتظار الموافقة
-        };
+            Text = r.Name,
+            Value = r.Name
+        }).ToList();
 
-        // ربط الإدارات والأقسام حسب الدور
-        if (Input.Role == "DivisionDirector")
+        AdministrationList = await _context.Administrations.Select(a => new SelectListItem
         {
-            if (!string.IsNullOrWhiteSpace(Input.AdministrationName))
-            {
-                var existingAdmin = await _context.Administrations
-                    .FirstOrDefaultAsync(a => a.AdministrationName == Input.AdministrationName);
+            Value = a.Id.ToString(),
+            Text = a.AdministrationName
+        }).ToListAsync();
 
-                if (existingAdmin == null)
+        SectionList = administrationId.HasValue
+            ? await _context.Sections
+                .Where(s => s.AdministrationId == administrationId.Value)
+                .Select(s => new SelectListItem
                 {
-                    var newAdmin = new Administration { AdministrationName = Input.AdministrationName };
-                    _context.Administrations.Add(newAdmin);
-                    await _context.SaveChangesAsync();
-                    registrationRequest.AdministrationId = newAdmin.Id;
-                }
-                else
-                {
-                    registrationRequest.AdministrationId = existingAdmin.Id;
-                }
-            }
-        }
-        else if (Input.Role == "SectionManager")
-        {
-            registrationRequest.AdministrationId = Input.AdministrationId;
-            registrationRequest.SectionName = Input.SectionName;
-        }
-        else if (Input.Role == "UnitManager")
-        {
-            registrationRequest.AdministrationId = Input.AdministrationId;
-            registrationRequest.SectionId = Input.SectionId;
-            registrationRequest.UnitName = Input.UnitName;
-        }
-
-        // إضافة الطلب إلى قاعدة البيانات
-        _context.RegistrationRequests.Add(registrationRequest);
-        await _context.SaveChangesAsync();
-
-
-        // إرسال رسالة تأكيد (اختياري)
-        // await _emailSender.SendEmailAsync(...);
-
-        // إعادة توجيه المستخدم إلى صفحة تأكيد التسجيل مع انتظار الموافقة
-        return RedirectToAction("RegistrationPending", "RegistrationRequests");
-
+                    Value = s.Id.ToString(),
+                    Text = s.SectionName
+                }).ToListAsync()
+            : new List<SelectListItem>();
     }
-    */
-
 
     private IdentityUser CreateUser()
     {

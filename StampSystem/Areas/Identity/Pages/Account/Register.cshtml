@@ -143,6 +143,9 @@
 
             const unitInputDiv = document.getElementById("unitInputDiv");
 
+            const adminSelect = document.querySelector('select[name="Input.AdministrationId"]');
+            const sectionSelect = document.querySelector('select[name="Input.SectionId"]');
+
             function hideAll() {
                 adminDropdownDiv.style.display = "none";
                 adminInputDiv.style.display = "none";
@@ -152,7 +155,7 @@
             }
 
             function updateFields(role) {
-                hideAll(); // ← أخفي الكل أولاً
+                hideAll(); // أخفي الكل أولاً
 
                 switch (role) {
                     case "DivisionDirector":
@@ -160,22 +163,58 @@
                         break;
                     case "SectionManager":
                         adminDropdownDiv.style.display = "block"; // اختيار الإدارة
-                        sectionInputDiv.style.display = "block"; // كتابة القسم
+                        sectionInputDiv.style.display = "block"; // كتابة القسم (اسم جديد)
                         break;
                     case "UnitManager":
                         adminDropdownDiv.style.display = "block"; // اختيار الإدارة
-                        sectionDropdownDiv.style.display = "block"; // اختيار القسم
+                        sectionDropdownDiv.style.display = "block"; // اختيار القسم من القائمة
                         unitInputDiv.style.display = "block"; // كتابة الوحدة
                         break;
-                    // HR أو غيره → ما يظهر شيء
                     default:
+                        // HR أو أدوار أخرى → إخفاء الكل
                         break;
                 }
             }
 
+            // تحديث قائمة الأقسام بناءً على الإدارة المختارة (للدور UnitManager)
+            adminSelect.addEventListener("change", function () {
+                const selectedAdminId = this.value;
+
+                // فقط إذا الدور هو UnitManager حدث قائمة الأقسام
+                if (roleSelect.value === "UnitManager" && selectedAdminId) {
+                    fetch(`/YourApi/GetSectionsByAdministration/${selectedAdminId}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            // افرغ الخيارات الحالية
+                            sectionSelect.innerHTML = '<option value="">-- اختر القسم --</option>';
+
+                            // أضف الأقسام الجديدة
+                            data.forEach(section => {
+                                const option = document.createElement("option");
+                                option.value = section.id;
+                                option.textContent = section.name;
+                                sectionSelect.appendChild(option);
+                            });
+                        })
+                        .catch(error => {
+                            console.error("خطأ في جلب الأقسام:", error);
+                        });
+                } else {
+                    // لو مش UnitManager أو الإدارة غير محددة، فرغ قائمة الأقسام
+                    sectionSelect.innerHTML = '<option value="">-- اختر القسم --</option>';
+                }
+            });
+
             // لما المستخدم يغيّر الدور
             roleSelect.addEventListener("change", function () {
                 updateFields(this.value);
+
+                // إذا تغير الدور وكنت في UnitManager وحصلت إدارة محددة، حدث الأقسام فوراً
+                if (this.value === "UnitManager" && adminSelect.value) {
+                    adminSelect.dispatchEvent(new Event('change'));
+                } else {
+                    sectionSelect.innerHTML = '<option value="">-- اختر القسم --</option>';
+                }
             });
 
             // تشغيل أولي لما الصفحة تفتح
@@ -183,5 +222,3 @@
         });
     </script>
 }
-
-
