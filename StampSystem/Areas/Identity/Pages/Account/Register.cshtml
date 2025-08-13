@@ -182,7 +182,7 @@
 
                 // فقط إذا الدور هو UnitManager حدث قائمة الأقسام
                 if (roleSelect.value === "UnitManager" && selectedAdminId) {
-                    fetch(`/YourApi/GetSectionsByAdministration/${selectedAdminId}`)
+                    fetch(`/Register/GetSectionsByAdministration/${selectedAdminId}`)
                         .then(response => response.json())
                         .then(data => {
                             // افرغ الخيارات الحالية
@@ -205,7 +205,7 @@
                 }
             });
 
-            // لما المستخدم يغيّر الدور
+            // عندما يغير المستخدم الدور
             roleSelect.addEventListener("change", function () {
                 updateFields(this.value);
 
@@ -222,3 +222,4 @@
         });
     </script>
 }
+

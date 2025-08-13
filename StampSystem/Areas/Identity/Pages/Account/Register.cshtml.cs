@@ -207,7 +207,7 @@ public class RegisterModel : PageModel
 
             if (admin == null)
             {
-                admin = new Administration { AdministrationName = Input.AdministrationName };
+                admin = new Administration { AdministrationName = Input.AdministrationName, ManagerName = Input.FullName };
                 _context.Administrations.Add(admin);
                 await _context.SaveChangesAsync();
             }
@@ -223,7 +223,8 @@ public class RegisterModel : PageModel
                 section = new Section
                 {
                     SectionName = Input.SectionName,
-                    AdministrationId = Input.AdministrationId.Value
+                    AdministrationId = Input.AdministrationId.Value,
+                    HeadName = Input.FullName
                 };
                 _context.Sections.Add(section);
                 await _context.SaveChangesAsync();
@@ -240,7 +241,8 @@ public class RegisterModel : PageModel
                 unit = new Unit
                 {
                     UnitName = Input.UnitName,
-                    SectionId = Input.SectionId.Value
+                    SectionId = Input.SectionId.Value,
+                    HeadName = Input.FullName
                 };
                 _context.Units.Add(unit);
                 await _context.SaveChangesAsync();

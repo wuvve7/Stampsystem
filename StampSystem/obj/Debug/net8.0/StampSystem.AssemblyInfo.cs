@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StampSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4555a0909dad07c8cd91c83cc8798f486b1d6bcc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cfed1b5783eee78a98f6d39673b542727fd472e")]
 [assembly: System.Reflection.AssemblyProductAttribute("StampSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StampSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
