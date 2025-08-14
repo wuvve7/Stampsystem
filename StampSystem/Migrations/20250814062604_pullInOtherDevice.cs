@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace StampSystem.Migrations
 {
     /// <inheritdoc />
-    public partial class newTryHome : Migration
+    public partial class pullInOtherDevice : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,13 +17,13 @@ namespace StampSystem.Migrations
 
            /* migrationBuilder.DropColumn(
                 name: "Administration",
-                table: "AspNetUsers");*/
+                table: "AspNetUsers");
 
             migrationBuilder.DropColumn(
                 name: "Discriminator",
-                table: "AspNetUsers");
+                table: "AspNetUsers");*/
 
-            migrationBuilder.RenameColumn(
+            /*migrationBuilder.RenameColumn(
                 name: "Name",
                 table: "Units",
                 newName: "UnitName");
@@ -33,17 +33,17 @@ namespace StampSystem.Migrations
                 table: "Sections",
                 newName: "SectionName");
 
-            /*migrationBuilder.RenameColumn(
+            migrationBuilder.RenameColumn(
                 name: "Unit",
                 table: "AspNetUsers",
-                newName: "RejectionReason");*/
+                newName: "RejectionReason");
 
             migrationBuilder.RenameColumn(
                 name: "Name",
                 table: "Administrations",
-                newName: "AdministrationName");
+                newName: "AdministrationName");*/
 
-            migrationBuilder.AlterColumn<string>(
+           /*migrationBuilder.AlterColumn<string>(
                 name: "PhoneNumber",
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
@@ -51,7 +51,7 @@ namespace StampSystem.Migrations
                 defaultValue: "",
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)",
-                oldNullable: true);
+                oldNullable: true);*/
 
             migrationBuilder.AlterColumn<string>(
                 name: "NationalID",
@@ -83,7 +83,7 @@ namespace StampSystem.Migrations
                 oldType: "int",
                 oldNullable: true);
 
-            migrationBuilder.AlterColumn<string>(
+            /*migrationBuilder.AlterColumn<string>(
                 name: "Email",
                 table: "AspNetUsers",
                 type: "nvarchar(256)",
@@ -95,7 +95,7 @@ namespace StampSystem.Migrations
                 oldMaxLength: 256,
                 oldNullable: true);
 
-           /* migrationBuilder.AddColumn<int>(
+            migrationBuilder.AddColumn<int>(
                 name: "AdministrationId",
                 table: "AspNetUsers",
                 type: "int",
@@ -115,81 +115,56 @@ namespace StampSystem.Migrations
                 nullable: false,
                 defaultValue: "");*/
 
-            /*migrationBuilder.CreateTable(
-                name: "RegistrationRequests",
+            migrationBuilder.CreateTable(
+                name: "StampRequests",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NationalID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    EmployeeId = table.Column<int>(type: "int", nullable: false),
+                    RequesterId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ReferenceNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StampType = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Purpose = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ApprovalNotes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    RequestDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AdministrationId = table.Column<int>(type: "int", nullable: true),
                     SectionId = table.Column<int>(type: "int", nullable: true),
-                    UnitId = table.Column<int>(type: "int", nullable: true),
-                    Role = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RegistrationReason = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    RejectionReason = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    UnitId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RegistrationRequests", x => x.Id);
+                    table.PrimaryKey("PK_StampRequests", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_RegistrationRequests_Administrations_AdministrationId",
-                        column: x => x.AdministrationId,
-                        principalTable: "Administrations",
+                        name: "FK_StampRequests_AspNetUsers_RequesterId",
+                        column: x => x.RequesterId,
+                        principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_RegistrationRequests_Sections_SectionId",
-                        column: x => x.SectionId,
-                        principalTable: "Sections",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_RegistrationRequests_Units_UnitId",
-                        column: x => x.UnitId,
-                        principalTable: "Units",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
-            
-            migrationBuilder.CreateIndex(
+
+            /*migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_AdministrationId",
                 table: "AspNetUsers",
-                column: "AdministrationId");
+                column: "AdministrationId");*
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetUsers_UnitId",
                 table: "AspNetUsers",
-                column: "UnitId");
+                column: "UnitId");*/
 
             migrationBuilder.CreateIndex(
-                name: "IX_RegistrationRequests_AdministrationId",
-                table: "RegistrationRequests",
-                column: "AdministrationId");
+                name: "IX_StampRequests_RequesterId",
+                table: "StampRequests",
+                column: "RequesterId");
 
-            migrationBuilder.CreateIndex(
-                name: "IX_RegistrationRequests_SectionId",
-                table: "RegistrationRequests",
-                column: "SectionId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_RegistrationRequests_UnitId",
-                table: "RegistrationRequests",
-                column: "UnitId");
-
-            migrationBuilder.AddForeignKey(
+            /*migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUsers_Administrations_AdministrationId",
                 table: "AspNetUsers",
                 column: "AdministrationId",
                 principalTable: "Administrations",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Restrict);
+                onDelete: ReferentialAction.Restrict);*/
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUsers_Sections_SectionId",
@@ -199,7 +174,7 @@ namespace StampSystem.Migrations
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
-            migrationBuilder.AddForeignKey(
+            /*migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUsers_Units_UnitId",
                 table: "AspNetUsers",
                 column: "UnitId",
@@ -224,7 +199,7 @@ namespace StampSystem.Migrations
                 table: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "RegistrationRequests");
+                name: "StampRequests");
 
             migrationBuilder.DropIndex(
                 name: "IX_AspNetUsers_AdministrationId",
@@ -266,13 +241,13 @@ namespace StampSystem.Migrations
                 table: "Administrations",
                 newName: "Name");
 
-            migrationBuilder.AlterColumn<string>(
+            /*migrationBuilder.AlterColumn<string>(
                 name: "PhoneNumber",
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
                 nullable: true,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+                oldType: "nvarchar(max)");*/
 
             migrationBuilder.AlterColumn<string>(
                 name: "NationalID",
@@ -298,7 +273,7 @@ namespace StampSystem.Migrations
                 oldClrType: typeof(int),
                 oldType: "int");
 
-            migrationBuilder.AlterColumn<string>(
+            /*migrationBuilder.AlterColumn<string>(
                 name: "Email",
                 table: "AspNetUsers",
                 type: "nvarchar(256)",
@@ -306,7 +281,7 @@ namespace StampSystem.Migrations
                 nullable: true,
                 oldClrType: typeof(string),
                 oldType: "nvarchar(256)",
-                oldMaxLength: 256);
+                oldMaxLength: 256);*/
 
             migrationBuilder.AddColumn<string>(
                 name: "Administration",

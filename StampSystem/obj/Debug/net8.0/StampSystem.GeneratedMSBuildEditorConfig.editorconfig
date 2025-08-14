@@ -17,309 +17,309 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StampSystem
 build_property.RootNamespace = StampSystem
-build_property.ProjectDir = C:\Users\P\source\repos\Stampsystem\StampSystem\
+build_property.ProjectDir = C:\Users\Watmutairi\source\repos\StampSystem\StampSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\P\source\repos\Stampsystem\StampSystem
+build_property.MSBuildProjectDirectory = C:\Users\Watmutairi\source\repos\StampSystem\StampSystem
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/Error.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Administrations/Create.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Administrations/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Administrations/Delete.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Administrations/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Administrations/Details.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Administrations/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Administrations/Edit.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Administrations/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Administrations/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Administrations/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Home/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Home/Privacy.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/RegistrationRequests/Details.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/RegistrationRequests/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uUmVxdWVzdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/RegistrationRequests/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/RegistrationRequests/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uUmVxdWVzdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/RegistrationRequests/RegistrationPending.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/RegistrationRequests/RegistrationPending.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uUmVxdWVzdHNcUmVnaXN0cmF0aW9uUGVuZGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Sections/Create.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Sections/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Sections/Delete.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Sections/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Sections/Details.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Sections/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Sections/Edit.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Sections/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Sections/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Sections/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Shared/Error.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Shared/_Notification.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Shared/_Notification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/ApprovedRequests.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/ApprovedRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xBcHByb3ZlZFJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/CompletedRequests.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/CompletedRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xDb21wbGV0ZWRSZXF1ZXN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/Create.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/Details.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/MyRequests.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/MyRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xNeVJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/PendingApprovalByHR.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/PendingApprovalByHR.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xQZW5kaW5nQXBwcm92YWxCeUhSLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/StampRequests/PendingApprovalByManager.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/StampRequests/PendingApprovalByManager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhbXBSZXF1ZXN0c1xQZW5kaW5nQXBwcm92YWxCeU1hbmFnZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Units/Create.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Units/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Units/Delete.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Units/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Units/Details.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Units/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Units/Edit.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Units/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Units/Index.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Units/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/_ViewImports.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/_ViewStart.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/P/source/repos/Stampsystem/StampSystem/Views/Shared/_Layout.cshtml]
+[C:/Users/Watmutairi/source/repos/StampSystem/StampSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4lvd73qb72

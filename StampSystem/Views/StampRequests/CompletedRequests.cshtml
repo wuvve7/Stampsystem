@@ -1,17 +1,19 @@
 ﻿@model IEnumerable<StampSystem.Models.StampRequest>
+<partial name="_Notification" />
 
-<h2>Completed Requests</h2>
+<h2>الطلبات المعتمدة / الجاهزة</h2>
 
 <table class="table">
     <thead>
         <tr>
-            <th>Reference Number</th>
-            <th>Requester</th>
-            <th>Stamp Type</th>
-            <th>Purpose</th>
-            <th>Status</th>
-            <th>Request Date</th>
-            <th>Approval Notes</th>
+            <th>الرقم المرجعي</th>
+            <th>مقدم الطلب</th>
+            <th>نوع الختم</th>
+            <th>الغرض</th>
+            <th>الحالة</th>
+            <th>تاريخ الطلب</th>
+            <th>ملاحظات الموافقة</th>
+            <th>الإجراءات</th>
         </tr>
     </thead>
     <tbody>
@@ -25,6 +27,29 @@
                 <td>@req.Status</td>
                 <td>@req.RequestDate.ToString("yyyy-MM-dd")</td>
                 <td>@req.ApprovalNotes</td>
+                <td>
+                    @if (req.Status == "Approved")
+                    {
+                        <form asp-action="MarkAsInPreparation" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@req.Id" />
+                            <button type="submit" class="btn btn-primary btn-sm">قيد التجهيز</button>
+                        </form>
+                    }
+                    else if (req.Status == "InPreparation")
+                    {
+                        <form asp-action="MarkAsReadyForPickup" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@req.Id" />
+                            <button type="submit" class="btn btn-warning btn-sm">جاهز للاستلام</button>
+                        </form>
+                    }
+                    else if (req.Status == "ReadyForPickup")
+                    {
+                        <form asp-action="MarkAsDelivered" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@req.Id" />
+                            <button type="submit" class="btn btn-success btn-sm">تم التسليم</button>
+                        </form>
+                    }
+                </td>
             </tr>
         }
     </tbody>

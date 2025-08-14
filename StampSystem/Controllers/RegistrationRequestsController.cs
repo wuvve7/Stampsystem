@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace StampSystem.Controllers
 {
     // لو تبي تحدد فقط موارد بشرية تدخل، فعل هذا السطر
-    //[Authorize(Roles = "HR")]
+    [Authorize(Roles = "HR")]
     public class RegistrationRequestsController : Controller
     {
         private readonly ApplicationDbContext _context;

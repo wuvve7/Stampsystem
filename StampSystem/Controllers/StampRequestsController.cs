@@ -238,7 +238,7 @@ namespace StampSystem.Controllers
         public async Task<IActionResult> CompletedRequests()
         {
             var requests = await _context.StampRequests
-                .Where(r => r.Status == "InPreparation" || r.Status == "ReadyForPickup" || r.Status == "Delivered")
+                .Where(r => r.Status == "Approved" || r.Status == "InPreparation" || r.Status == "ReadyForPickup" || r.Status == "Delivered")
                 .Include(r => r.Requester)
                 .ToListAsync();
 
